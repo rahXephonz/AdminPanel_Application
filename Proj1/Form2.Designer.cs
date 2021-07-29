@@ -122,7 +122,7 @@ namespace Proj1
             this.Text_password.FocusedState.Parent = this.Text_password;
             this.Text_password.FocusedState.PlaceholderForeColor = System.Drawing.Color.White;
             this.Text_password.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Text_password.ForeColor = System.Drawing.Color.DarkGray;
+            this.Text_password.ForeColor = System.Drawing.Color.DimGray;
             this.Text_password.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
             this.Text_password.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
             this.Text_password.HoverState.ForeColor = System.Drawing.Color.White;
@@ -229,7 +229,7 @@ namespace Proj1
             this.Text_username.FocusedState.Parent = this.Text_username;
             this.Text_username.FocusedState.PlaceholderForeColor = System.Drawing.Color.White;
             this.Text_username.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Text_username.ForeColor = System.Drawing.Color.DarkGray;
+            this.Text_username.ForeColor = System.Drawing.Color.DimGray;
             this.Text_username.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
             this.Text_username.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
             this.Text_username.HoverState.ForeColor = System.Drawing.Color.White;
@@ -292,7 +292,7 @@ namespace Proj1
             this.Text_email.FocusedState.Parent = this.Text_email;
             this.Text_email.FocusedState.PlaceholderForeColor = System.Drawing.Color.White;
             this.Text_email.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Text_email.ForeColor = System.Drawing.Color.DarkGray;
+            this.Text_email.ForeColor = System.Drawing.Color.DimGray;
             this.Text_email.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
             this.Text_email.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
             this.Text_email.HoverState.ForeColor = System.Drawing.Color.White;
