@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
@@ -13,6 +14,7 @@ namespace Proj1
 {
     public partial class SignupForm : Form
     {
+        
         DBConnect connect = new DBConnect();
         public SignupForm()
         {
@@ -34,7 +36,7 @@ namespace Proj1
         private const int HT_CAPTION = 0x2;
         // End
 
-        // Aksi tombol klik create ke menu signup (Already have an account?)
+        // Aksi tombol klik create ke menu signup (Didn't have an account?)
         private void Label_signin_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -61,11 +63,11 @@ namespace Proj1
         // Aksi tombol klik create ke menu signin (Already have an account?)
         private void Label_signin_MouseEnter(object sender, EventArgs e)
         {
-            Label_signin.ForeColor = Color.White;
+            Label_signin.ForeColor = Color.Black;
         }
         private void Label_signin_MouseLeave(object sender, EventArgs e)
         {
-            Label_signin.ForeColor = Color.Black;
+            Label_signin.ForeColor = Color.IndianRed;
         }
 
         // End
@@ -84,7 +86,7 @@ namespace Proj1
                 bunifuSnackbar1.Show(this, "Password too weak (Max 7 characters)", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error);
             }
 
-            else 
+            else
             {
                 string selectquery = "INSERT INTO `user`(`username`, `email`, `password`) VALUES (@usn, @mail, @pass)";
                 MySqlCommand command = new MySqlCommand(selectquery, connect.GetConnection());
@@ -127,7 +129,7 @@ namespace Proj1
         }
         // End
 
-        // Cek jika user sudah terdaftar dan tersedia didatabase
+        // Cek jika username sudah terdaftar dan tersedia didatabase
         public Boolean Check_Username()
         {
             DataTable table = new DataTable();
@@ -149,7 +151,7 @@ namespace Proj1
                 return false;
             }
         }
-
+        // Cek Jika email sudah terdaftar dan tersedia di database
         public Boolean Check_UserEmail()
         {
             DataTable table = new DataTable();
@@ -169,6 +171,35 @@ namespace Proj1
             {
                 return false;
             }
+        }
+
+        private void Text_email_Leave(object sender, EventArgs e)
+        {
+            string pattern = (@"^[a-zA-Z][\w\.-]{2,28}[a-zA-Z0-9]@[a-zA-Z0-9][\w\.-]*[a-zA-Z0-9]\.[a-zA-Z][a-zA-Z\.]*[a-zA-Z]$");
+            if (Regex.IsMatch(Text_email.Text, pattern))
+            {
+            }
+            else
+            {
+                bunifuSnackbar1.Show(this, "Please provide a valid email!", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error);
+                return;
+            }
+        }
+
+
+        // Menampilkan Password
+
+        private void Show_pass_CheckedChanged(object sender, EventArgs e)
+        {
+            if (Show_pass.Checked)
+            {
+                Text_password.PasswordChar = default(char);
+            }
+            else
+            {
+                Text_password.PasswordChar = '●';
+            }
+
         }
     }
 }

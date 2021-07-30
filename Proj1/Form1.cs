@@ -69,8 +69,6 @@ namespace Proj1
                 {
                     username = Text_username.Text;
                     this.Hide();
-                    Panel_data mainForm = new Panel_data();
-                    mainForm.Show();
                 }
                 else
                 {
@@ -110,6 +108,18 @@ namespace Proj1
         private void Label_X_MouseLeave(object sender, EventArgs e)
         {
             Label_X.ForeColor = Color.Black;
+        }
+
+        private void Show_pass_CheckedChanged(object sender, EventArgs e)
+        {
+            if (Show_pass.Checked)
+            {
+                Text_password.PasswordChar = default(char);
+            }
+            else
+            {
+                Text_password.PasswordChar = '●';
+            }
         }
         // End
     }

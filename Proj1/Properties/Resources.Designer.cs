@@ -63,6 +63,16 @@ namespace Proj1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap close {
+            get {
+                object obj = ResourceManager.GetObject("close", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap email {
             get {
                 object obj = ResourceManager.GetObject("email", resourceCulture);
@@ -76,6 +86,16 @@ namespace Proj1.Properties {
         internal static System.Drawing.Bitmap pass {
             get {
                 object obj = ResourceManager.GetObject("pass", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap show {
+            get {
+                object obj = ResourceManager.GetObject("show", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -104,4 +104,3 @@ E:\VS Project\Proj1\Proj1\bin\Debug\Bunifu.UI.WinForms.BunifuTransition.xml
 E:\VS Project\Proj1\Proj1\bin\Debug\Bunifu.UI.WinForms.BunifuUserControl.xml
 E:\VS Project\Proj1\Proj1\obj\Debug\Proj1.exe.licenses
 E:\VS Project\Proj1\Proj1\obj\Debug\Proj1.SignupForm.resources
-E:\VS Project\Proj1\Proj1\obj\Debug\Proj1.Panel_data.resources
