@@ -14,7 +14,6 @@ namespace Proj1
     public partial class LoginForm : Form
     {
         DBConnect connect = new DBConnect();
-
         public static string username;
         public LoginForm()
         {
@@ -46,7 +45,7 @@ namespace Proj1
         {
 
             // Jika ada username yang kosong dan password kosong maka menampilkan warning
-            if (Text_username.Text.Trim().Equals("") || Text_password.Text == "") 
+            if (Text_username.Text.Trim().Equals("") || Text_password.Text == "")
             {
                 // MessageBox.Show("Enter your username and password to login!", "Missing Information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 bunifuSnackbar1.Show(this, "Enter your username and password to login!", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error);
@@ -67,8 +66,11 @@ namespace Proj1
                 // Cek status jika ada user dan password yang terdaftar jika terdaftar maka diarahkan ke panel utama
                 if (table.Rows.Count > 0)
                 {
-                    username = Text_username.Text;
                     this.Hide();
+                    username = Text_username.Text;
+                    Admindb adminForm = new Admindb();
+                    adminForm.Show();
+
                 }
                 else
                 {
@@ -110,17 +112,21 @@ namespace Proj1
             Label_X.ForeColor = Color.Black;
         }
 
+        // End
+
+        // Event Handler Tampilkan Password 
         private void Show_pass_CheckedChanged(object sender, EventArgs e)
         {
             if (Show_pass.Checked)
             {
-                Text_password.PasswordChar = default(char);
+                Text_password.PasswordChar = default;
             }
             else
             {
                 Text_password.PasswordChar = '●';
             }
         }
+
         // End
     }
 }

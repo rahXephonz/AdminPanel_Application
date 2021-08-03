@@ -37,5 +37,23 @@ namespace Proj1
                 connection.Close();
             }
         }
+
+        //Eksekusi query data gridview
+        public void ExecuteQuery(string query)
+        {
+            MySqlCommand command = new MySqlCommand(query,GetConnection());
+            command.ExecuteNonQuery();
+        }
+
+        public object ShowData(string query)
+        {
+            MySqlDataAdapter adapter = new MySqlDataAdapter(query,GetConnection());
+            DataSet data = new DataSet();
+
+            adapter.Fill(data);
+            object bebas = data.Tables[0];
+            return bebas;
+        }
+        
     }
 }

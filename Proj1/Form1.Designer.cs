@@ -36,15 +36,15 @@ namespace Proj1
             this.bunifuSnackbar1 = new Bunifu.UI.WinForms.BunifuSnackbar(this.components);
             this.UI_Vector1 = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.Show_pass = new Guna.UI2.WinForms.Guna2ImageCheckBox();
+            this.Text_password = new Guna.UI2.WinForms.Guna2TextBox();
+            this.Label_Infosignin = new Bunifu.UI.WinForms.BunifuLabel();
+            this.Label_infousername = new Bunifu.UI.WinForms.BunifuLabel();
+            this.Label_infopw = new Bunifu.UI.WinForms.BunifuLabel();
+            this.Label_forgot = new Bunifu.UI.WinForms.BunifuLabel();
             this.Label_X = new Bunifu.UI.WinForms.BunifuLabel();
             this.Text_username = new Guna.UI2.WinForms.Guna2TextBox();
             this.Button_Signin = new Guna.UI2.WinForms.Guna2Button();
-            this.Text_password = new Guna.UI2.WinForms.Guna2TextBox();
-            this.Label_forgot = new Bunifu.UI.WinForms.BunifuLabel();
-            this.Label_infousername = new Bunifu.UI.WinForms.BunifuLabel();
-            this.Label_infopw = new Bunifu.UI.WinForms.BunifuLabel();
-            this.Label_Infosignin = new Bunifu.UI.WinForms.BunifuLabel();
-            this.Show_pass = new Guna.UI2.WinForms.Guna2ImageCheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.UI_Vector1)).BeginInit();
             this.bunifuPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -203,6 +203,7 @@ namespace Proj1
             this.bunifuPanel1.BorderRadius = 3;
             this.bunifuPanel1.BorderThickness = 1;
             this.bunifuPanel1.Controls.Add(this.Show_pass);
+            this.bunifuPanel1.Controls.Add(this.Text_password);
             this.bunifuPanel1.Controls.Add(this.Label_Infosignin);
             this.bunifuPanel1.Controls.Add(this.Label_infousername);
             this.bunifuPanel1.Controls.Add(this.Label_infopw);
@@ -210,12 +211,129 @@ namespace Proj1
             this.bunifuPanel1.Controls.Add(this.Label_X);
             this.bunifuPanel1.Controls.Add(this.Text_username);
             this.bunifuPanel1.Controls.Add(this.Button_Signin);
-            this.bunifuPanel1.Controls.Add(this.Text_password);
             this.bunifuPanel1.Location = new System.Drawing.Point(391, -2);
             this.bunifuPanel1.Name = "bunifuPanel1";
             this.bunifuPanel1.ShowBorders = false;
             this.bunifuPanel1.Size = new System.Drawing.Size(414, 487);
             this.bunifuPanel1.TabIndex = 3;
+            // 
+            // Show_pass
+            // 
+            this.Show_pass.BackColor = System.Drawing.Color.White;
+            this.Show_pass.CheckedState.Image = global::Proj1.Properties.Resources.close;
+            this.Show_pass.CheckedState.Parent = this.Show_pass;
+            this.Show_pass.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Show_pass.HoverState.Parent = this.Show_pass;
+            this.Show_pass.Image = global::Proj1.Properties.Resources.show;
+            this.Show_pass.ImageOffset = new System.Drawing.Point(0, 0);
+            this.Show_pass.ImageRotate = 0F;
+            this.Show_pass.Location = new System.Drawing.Point(280, 254);
+            this.Show_pass.Name = "Show_pass";
+            this.Show_pass.PressedState.Parent = this.Show_pass;
+            this.Show_pass.ShadowDecoration.BorderRadius = 5;
+            this.Show_pass.ShadowDecoration.Parent = this.Show_pass;
+            this.Show_pass.Size = new System.Drawing.Size(30, 24);
+            this.Show_pass.TabIndex = 17;
+            this.Show_pass.CheckedChanged += new System.EventHandler(this.Show_pass_CheckedChanged);
+            // 
+            // Text_password
+            // 
+            this.Text_password.BackColor = System.Drawing.Color.Transparent;
+            this.Text_password.BorderRadius = 7;
+            this.Text_password.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.Text_password.DefaultText = "";
+            this.Text_password.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.Text_password.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.Text_password.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.Text_password.DisabledState.Parent = this.Text_password;
+            this.Text_password.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.Text_password.FocusedState.BorderColor = System.Drawing.Color.White;
+            this.Text_password.FocusedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
+            this.Text_password.FocusedState.Parent = this.Text_password;
+            this.Text_password.FocusedState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
+            this.Text_password.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Text_password.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
+            this.Text_password.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
+            this.Text_password.HoverState.Parent = this.Text_password;
+            this.Text_password.IconLeft = global::Proj1.Properties.Resources.pass;
+            this.Text_password.IconLeftOffset = new System.Drawing.Point(2, 0);
+            this.Text_password.Location = new System.Drawing.Point(99, 248);
+            this.Text_password.Name = "Text_password";
+            this.Text_password.PasswordChar = '●';
+            this.Text_password.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
+            this.Text_password.PlaceholderText = "Enter your password";
+            this.Text_password.SelectedText = "";
+            this.Text_password.ShadowDecoration.Parent = this.Text_password;
+            this.Text_password.Size = new System.Drawing.Size(216, 36);
+            this.Text_password.TabIndex = 2;
+            this.Text_password.TextOffset = new System.Drawing.Point(2, 0);
+            // 
+            // Label_Infosignin
+            // 
+            this.Label_Infosignin.AllowParentOverrides = false;
+            this.Label_Infosignin.AutoEllipsis = false;
+            this.Label_Infosignin.Cursor = System.Windows.Forms.Cursors.Default;
+            this.Label_Infosignin.CursorType = System.Windows.Forms.Cursors.Default;
+            this.Label_Infosignin.Font = new System.Drawing.Font("JetBrains Mono", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_Infosignin.Location = new System.Drawing.Point(155, 82);
+            this.Label_Infosignin.Name = "Label_Infosignin";
+            this.Label_Infosignin.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Label_Infosignin.Size = new System.Drawing.Size(98, 31);
+            this.Label_Infosignin.TabIndex = 9;
+            this.Label_Infosignin.Text = "Sign In";
+            this.Label_Infosignin.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.Label_Infosignin.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // Label_infousername
+            // 
+            this.Label_infousername.AllowParentOverrides = false;
+            this.Label_infousername.AutoEllipsis = false;
+            this.Label_infousername.Cursor = System.Windows.Forms.Cursors.Default;
+            this.Label_infousername.CursorType = System.Windows.Forms.Cursors.Default;
+            this.Label_infousername.Font = new System.Drawing.Font("JetBrains Mono", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_infousername.ForeColor = System.Drawing.Color.Black;
+            this.Label_infousername.Location = new System.Drawing.Point(100, 146);
+            this.Label_infousername.Name = "Label_infousername";
+            this.Label_infousername.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Label_infousername.Size = new System.Drawing.Size(91, 14);
+            this.Label_infousername.TabIndex = 8;
+            this.Label_infousername.Text = "Your Username";
+            this.Label_infousername.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.Label_infousername.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // Label_infopw
+            // 
+            this.Label_infopw.AllowParentOverrides = false;
+            this.Label_infopw.AutoEllipsis = false;
+            this.Label_infopw.Cursor = System.Windows.Forms.Cursors.Default;
+            this.Label_infopw.CursorType = System.Windows.Forms.Cursors.Default;
+            this.Label_infopw.Font = new System.Drawing.Font("JetBrains Mono", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_infopw.ForeColor = System.Drawing.Color.Black;
+            this.Label_infopw.Location = new System.Drawing.Point(100, 228);
+            this.Label_infopw.Name = "Label_infopw";
+            this.Label_infopw.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Label_infopw.Size = new System.Drawing.Size(91, 14);
+            this.Label_infopw.TabIndex = 7;
+            this.Label_infopw.Text = "Your Password";
+            this.Label_infopw.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.Label_infopw.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // Label_forgot
+            // 
+            this.Label_forgot.AllowParentOverrides = false;
+            this.Label_forgot.AutoEllipsis = false;
+            this.Label_forgot.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Label_forgot.CursorType = System.Windows.Forms.Cursors.Hand;
+            this.Label_forgot.Font = new System.Drawing.Font("JetBrains Mono", 8.999999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_forgot.ForeColor = System.Drawing.Color.Black;
+            this.Label_forgot.Location = new System.Drawing.Point(200, 292);
+            this.Label_forgot.Name = "Label_forgot";
+            this.Label_forgot.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Label_forgot.Size = new System.Drawing.Size(112, 16);
+            this.Label_forgot.TabIndex = 6;
+            this.Label_forgot.Text = "Forgot Password?";
+            this.Label_forgot.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.Label_forgot.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
             // Label_X
             // 
@@ -300,124 +418,6 @@ namespace Proj1
             this.Button_Signin.Text = "Next";
             this.Button_Signin.Click += new System.EventHandler(this.Button_Signin_Click);
             // 
-            // Text_password
-            // 
-            this.Text_password.BackColor = System.Drawing.Color.Transparent;
-            this.Text_password.BorderRadius = 7;
-            this.Text_password.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.Text_password.DefaultText = "";
-            this.Text_password.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.Text_password.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.Text_password.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.Text_password.DisabledState.Parent = this.Text_password;
-            this.Text_password.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.Text_password.FocusedState.BorderColor = System.Drawing.Color.White;
-            this.Text_password.FocusedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
-            this.Text_password.FocusedState.Parent = this.Text_password;
-            this.Text_password.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Text_password.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
-            this.Text_password.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
-            this.Text_password.HoverState.Parent = this.Text_password;
-            this.Text_password.HoverState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
-            this.Text_password.IconLeft = global::Proj1.Properties.Resources.pass;
-            this.Text_password.IconLeftOffset = new System.Drawing.Point(2, 0);
-            this.Text_password.Location = new System.Drawing.Point(99, 248);
-            this.Text_password.Name = "Text_password";
-            this.Text_password.PasswordChar = '●';
-            this.Text_password.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
-            this.Text_password.PlaceholderText = "Enter your password";
-            this.Text_password.SelectedText = "";
-            this.Text_password.ShadowDecoration.Parent = this.Text_password;
-            this.Text_password.Size = new System.Drawing.Size(216, 36);
-            this.Text_password.TabIndex = 2;
-            this.Text_password.TextOffset = new System.Drawing.Point(2, 0);
-            // 
-            // Label_forgot
-            // 
-            this.Label_forgot.AllowParentOverrides = false;
-            this.Label_forgot.AutoEllipsis = false;
-            this.Label_forgot.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Label_forgot.CursorType = System.Windows.Forms.Cursors.Hand;
-            this.Label_forgot.Font = new System.Drawing.Font("JetBrains Mono", 8.999999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label_forgot.ForeColor = System.Drawing.Color.Black;
-            this.Label_forgot.Location = new System.Drawing.Point(200, 292);
-            this.Label_forgot.Name = "Label_forgot";
-            this.Label_forgot.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Label_forgot.Size = new System.Drawing.Size(112, 16);
-            this.Label_forgot.TabIndex = 6;
-            this.Label_forgot.Text = "Forgot Password?";
-            this.Label_forgot.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.Label_forgot.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
-            // Label_infousername
-            // 
-            this.Label_infousername.AllowParentOverrides = false;
-            this.Label_infousername.AutoEllipsis = false;
-            this.Label_infousername.Cursor = System.Windows.Forms.Cursors.Default;
-            this.Label_infousername.CursorType = System.Windows.Forms.Cursors.Default;
-            this.Label_infousername.Font = new System.Drawing.Font("JetBrains Mono", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label_infousername.ForeColor = System.Drawing.Color.Black;
-            this.Label_infousername.Location = new System.Drawing.Point(100, 146);
-            this.Label_infousername.Name = "Label_infousername";
-            this.Label_infousername.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Label_infousername.Size = new System.Drawing.Size(91, 14);
-            this.Label_infousername.TabIndex = 8;
-            this.Label_infousername.Text = "Your Username";
-            this.Label_infousername.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.Label_infousername.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
-            // Label_infopw
-            // 
-            this.Label_infopw.AllowParentOverrides = false;
-            this.Label_infopw.AutoEllipsis = false;
-            this.Label_infopw.Cursor = System.Windows.Forms.Cursors.Default;
-            this.Label_infopw.CursorType = System.Windows.Forms.Cursors.Default;
-            this.Label_infopw.Font = new System.Drawing.Font("JetBrains Mono", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label_infopw.ForeColor = System.Drawing.Color.Black;
-            this.Label_infopw.Location = new System.Drawing.Point(100, 228);
-            this.Label_infopw.Name = "Label_infopw";
-            this.Label_infopw.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Label_infopw.Size = new System.Drawing.Size(91, 14);
-            this.Label_infopw.TabIndex = 7;
-            this.Label_infopw.Text = "Your Password";
-            this.Label_infopw.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.Label_infopw.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
-            // Label_Infosignin
-            // 
-            this.Label_Infosignin.AllowParentOverrides = false;
-            this.Label_Infosignin.AutoEllipsis = false;
-            this.Label_Infosignin.Cursor = System.Windows.Forms.Cursors.Default;
-            this.Label_Infosignin.CursorType = System.Windows.Forms.Cursors.Default;
-            this.Label_Infosignin.Font = new System.Drawing.Font("JetBrains Mono", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label_Infosignin.Location = new System.Drawing.Point(155, 82);
-            this.Label_Infosignin.Name = "Label_Infosignin";
-            this.Label_Infosignin.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Label_Infosignin.Size = new System.Drawing.Size(98, 31);
-            this.Label_Infosignin.TabIndex = 9;
-            this.Label_Infosignin.Text = "Sign In";
-            this.Label_Infosignin.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.Label_Infosignin.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
-            // Show_pass
-            // 
-            this.Show_pass.BackColor = System.Drawing.Color.White;
-            this.Show_pass.CheckedState.Image = global::Proj1.Properties.Resources.close;
-            this.Show_pass.CheckedState.Parent = this.Show_pass;
-            this.Show_pass.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Show_pass.HoverState.Parent = this.Show_pass;
-            this.Show_pass.Image = global::Proj1.Properties.Resources.show;
-            this.Show_pass.ImageOffset = new System.Drawing.Point(0, 0);
-            this.Show_pass.ImageRotate = 0F;
-            this.Show_pass.Location = new System.Drawing.Point(281, 252);
-            this.Show_pass.Name = "Show_pass";
-            this.Show_pass.PressedState.Parent = this.Show_pass;
-            this.Show_pass.ShadowDecoration.BorderRadius = 5;
-            this.Show_pass.ShadowDecoration.Parent = this.Show_pass;
-            this.Show_pass.Size = new System.Drawing.Size(28, 29);
-            this.Show_pass.TabIndex = 18;
-            this.Show_pass.CheckedChanged += new System.EventHandler(this.Show_pass_CheckedChanged);
-            // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -444,18 +444,18 @@ namespace Proj1
 
         private Guna.UI2.WinForms.Guna2TextBox Text_username;
         private Guna.UI2.WinForms.Guna2Button Button_Signin;
-        private Guna.UI2.WinForms.Guna2TextBox Text_password;
         private Bunifu.UI.WinForms.BunifuPanel bunifuPanel1;
         private Bunifu.UI.WinForms.BunifuPictureBox UI_Vector1;
         private Bunifu.UI.WinForms.BunifuLabel Label_create;
         private Bunifu.UI.WinForms.BunifuLabel Label_X;
         private Bunifu.UI.WinForms.BunifuFormDock bunifuFormDock1;
         private Bunifu.UI.WinForms.BunifuSnackbar bunifuSnackbar1;
-        private Guna.UI2.WinForms.Guna2ImageCheckBox Show_pass;
+        private Bunifu.UI.WinForms.BunifuLabel Label_infopw;
         private Bunifu.UI.WinForms.BunifuLabel Label_Infosignin;
         private Bunifu.UI.WinForms.BunifuLabel Label_infousername;
-        private Bunifu.UI.WinForms.BunifuLabel Label_infopw;
         private Bunifu.UI.WinForms.BunifuLabel Label_forgot;
+        private Guna.UI2.WinForms.Guna2TextBox Text_password;
+        private Guna.UI2.WinForms.Guna2ImageCheckBox Show_pass;
     }
 }
 

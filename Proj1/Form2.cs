@@ -173,6 +173,8 @@ namespace Proj1
             }
         }
 
+        
+        // Event Handler validasi email adress dengan regex
         private void Text_email_Leave(object sender, EventArgs e)
         {
             string pattern = (@"^[a-zA-Z][\w\.-]{2,28}[a-zA-Z0-9]@[a-zA-Z0-9][\w\.-]*[a-zA-Z0-9]\.[a-zA-Z][a-zA-Z\.]*[a-zA-Z]$");
@@ -187,19 +189,17 @@ namespace Proj1
         }
 
 
-        // Menampilkan Password
-
-        private void Show_pass_CheckedChanged(object sender, EventArgs e)
+        // Event Handler Tampilkan Password 
+        private void Show_pass_CheckedChanged_1(object sender, EventArgs e)
         {
             if (Show_pass.Checked)
             {
-                Text_password.PasswordChar = default(char);
+                Text_password.PasswordChar = default;
             }
             else
             {
                 Text_password.PasswordChar = '●';
             }
-
         }
     }
 }

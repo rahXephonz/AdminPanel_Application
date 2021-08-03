@@ -35,17 +35,17 @@ namespace Proj1
             this.bunifuFormDock1 = new Bunifu.UI.WinForms.BunifuFormDock();
             this.bunifuSnackbar1 = new Bunifu.UI.WinForms.BunifuSnackbar(this.components);
             this.bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.Show_pass = new Guna.UI2.WinForms.Guna2ImageCheckBox();
+            this.Label_infopw = new Bunifu.UI.WinForms.BunifuLabel();
             this.Text_password = new Guna.UI2.WinForms.Guna2TextBox();
+            this.Label_Infosignup = new Bunifu.UI.WinForms.BunifuLabel();
+            this.Label_infousername = new Bunifu.UI.WinForms.BunifuLabel();
+            this.Label_infoemail = new Bunifu.UI.WinForms.BunifuLabel();
+            this.Label_signin = new Bunifu.UI.WinForms.BunifuLabel();
             this.Text_username = new Guna.UI2.WinForms.Guna2TextBox();
             this.Button_Signup = new Guna.UI2.WinForms.Guna2Button();
             this.Text_email = new Guna.UI2.WinForms.Guna2TextBox();
             this.UI_Vector2 = new Bunifu.UI.WinForms.BunifuPictureBox();
-            this.Label_signin = new Bunifu.UI.WinForms.BunifuLabel();
-            this.Label_infousername = new Bunifu.UI.WinForms.BunifuLabel();
-            this.Show_pass = new Guna.UI2.WinForms.Guna2ImageCheckBox();
-            this.Label_infopw = new Bunifu.UI.WinForms.BunifuLabel();
-            this.Label_infoemail = new Bunifu.UI.WinForms.BunifuLabel();
-            this.Label_Infosignup = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.UI_Vector2)).BeginInit();
             this.SuspendLayout();
@@ -203,6 +203,42 @@ namespace Proj1
             this.bunifuPanel1.Size = new System.Drawing.Size(414, 487);
             this.bunifuPanel1.TabIndex = 6;
             // 
+            // Show_pass
+            // 
+            this.Show_pass.BackColor = System.Drawing.Color.White;
+            this.Show_pass.CheckedState.Image = global::Proj1.Properties.Resources.close;
+            this.Show_pass.CheckedState.Parent = this.Show_pass;
+            this.Show_pass.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Show_pass.HoverState.Parent = this.Show_pass;
+            this.Show_pass.Image = global::Proj1.Properties.Resources.show;
+            this.Show_pass.ImageOffset = new System.Drawing.Point(0, 0);
+            this.Show_pass.ImageRotate = 0F;
+            this.Show_pass.Location = new System.Drawing.Point(285, 273);
+            this.Show_pass.Name = "Show_pass";
+            this.Show_pass.PressedState.Parent = this.Show_pass;
+            this.Show_pass.ShadowDecoration.BorderRadius = 5;
+            this.Show_pass.ShadowDecoration.Parent = this.Show_pass;
+            this.Show_pass.Size = new System.Drawing.Size(30, 24);
+            this.Show_pass.TabIndex = 16;
+            this.Show_pass.CheckedChanged += new System.EventHandler(this.Show_pass_CheckedChanged_1);
+            // 
+            // Label_infopw
+            // 
+            this.Label_infopw.AllowParentOverrides = false;
+            this.Label_infopw.AutoEllipsis = false;
+            this.Label_infopw.Cursor = System.Windows.Forms.Cursors.Default;
+            this.Label_infopw.CursorType = System.Windows.Forms.Cursors.Default;
+            this.Label_infopw.Font = new System.Drawing.Font("JetBrains Mono", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_infopw.ForeColor = System.Drawing.Color.Black;
+            this.Label_infopw.Location = new System.Drawing.Point(107, 247);
+            this.Label_infopw.Name = "Label_infopw";
+            this.Label_infopw.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Label_infopw.Size = new System.Drawing.Size(91, 14);
+            this.Label_infopw.TabIndex = 11;
+            this.Label_infopw.Text = "Your Password";
+            this.Label_infopw.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.Label_infopw.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
             // Text_password
             // 
             this.Text_password.BackColor = System.Drawing.Color.Transparent;
@@ -234,6 +270,76 @@ namespace Proj1
             this.Text_password.Size = new System.Drawing.Size(216, 36);
             this.Text_password.TabIndex = 3;
             this.Text_password.TextOffset = new System.Drawing.Point(2, 0);
+            // 
+            // Label_Infosignup
+            // 
+            this.Label_Infosignup.AllowParentOverrides = false;
+            this.Label_Infosignup.AutoEllipsis = false;
+            this.Label_Infosignup.Cursor = System.Windows.Forms.Cursors.Default;
+            this.Label_Infosignup.CursorType = System.Windows.Forms.Cursors.Default;
+            this.Label_Infosignup.Font = new System.Drawing.Font("JetBrains Mono", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_Infosignup.Location = new System.Drawing.Point(162, 44);
+            this.Label_Infosignup.Name = "Label_Infosignup";
+            this.Label_Infosignup.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Label_Infosignup.Size = new System.Drawing.Size(98, 31);
+            this.Label_Infosignup.TabIndex = 9;
+            this.Label_Infosignup.Text = "Sign Up";
+            this.Label_Infosignup.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.Label_Infosignup.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // Label_infousername
+            // 
+            this.Label_infousername.AllowParentOverrides = false;
+            this.Label_infousername.AutoEllipsis = false;
+            this.Label_infousername.Cursor = System.Windows.Forms.Cursors.Default;
+            this.Label_infousername.CursorType = System.Windows.Forms.Cursors.Default;
+            this.Label_infousername.Font = new System.Drawing.Font("JetBrains Mono", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_infousername.ForeColor = System.Drawing.Color.Black;
+            this.Label_infousername.Location = new System.Drawing.Point(107, 105);
+            this.Label_infousername.Name = "Label_infousername";
+            this.Label_infousername.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Label_infousername.Size = new System.Drawing.Size(91, 14);
+            this.Label_infousername.TabIndex = 8;
+            this.Label_infousername.Text = "Your Username";
+            this.Label_infousername.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.Label_infousername.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // Label_infoemail
+            // 
+            this.Label_infoemail.AllowParentOverrides = false;
+            this.Label_infoemail.AutoEllipsis = false;
+            this.Label_infoemail.Cursor = System.Windows.Forms.Cursors.Default;
+            this.Label_infoemail.CursorType = System.Windows.Forms.Cursors.Default;
+            this.Label_infoemail.Font = new System.Drawing.Font("JetBrains Mono", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_infoemail.ForeColor = System.Drawing.Color.Black;
+            this.Label_infoemail.Location = new System.Drawing.Point(107, 175);
+            this.Label_infoemail.Name = "Label_infoemail";
+            this.Label_infoemail.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Label_infoemail.Size = new System.Drawing.Size(70, 14);
+            this.Label_infoemail.TabIndex = 7;
+            this.Label_infoemail.Text = "Your Email";
+            this.Label_infoemail.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.Label_infoemail.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // Label_signin
+            // 
+            this.Label_signin.AllowParentOverrides = false;
+            this.Label_signin.AutoEllipsis = false;
+            this.Label_signin.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Label_signin.CursorType = System.Windows.Forms.Cursors.Hand;
+            this.Label_signin.Font = new System.Drawing.Font("JetBrains Mono", 8.999999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_signin.ForeColor = System.Drawing.Color.IndianRed;
+            this.Label_signin.Location = new System.Drawing.Point(127, 330);
+            this.Label_signin.Name = "Label_signin";
+            this.Label_signin.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Label_signin.Size = new System.Drawing.Size(168, 16);
+            this.Label_signin.TabIndex = 6;
+            this.Label_signin.Text = "Already have an account?";
+            this.Label_signin.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.Label_signin.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.Label_signin.Click += new System.EventHandler(this.Label_signin_Click);
+            this.Label_signin.MouseEnter += new System.EventHandler(this.Label_signin_MouseEnter);
+            this.Label_signin.MouseLeave += new System.EventHandler(this.Label_signin_MouseLeave);
             // 
             // Text_username
             // 
@@ -350,112 +456,6 @@ namespace Proj1
             this.UI_Vector2.TabIndex = 5;
             this.UI_Vector2.TabStop = false;
             this.UI_Vector2.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
-            // 
-            // Label_signin
-            // 
-            this.Label_signin.AllowParentOverrides = false;
-            this.Label_signin.AutoEllipsis = false;
-            this.Label_signin.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Label_signin.CursorType = System.Windows.Forms.Cursors.Hand;
-            this.Label_signin.Font = new System.Drawing.Font("JetBrains Mono", 8.999999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label_signin.ForeColor = System.Drawing.Color.IndianRed;
-            this.Label_signin.Location = new System.Drawing.Point(127, 330);
-            this.Label_signin.Name = "Label_signin";
-            this.Label_signin.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Label_signin.Size = new System.Drawing.Size(168, 16);
-            this.Label_signin.TabIndex = 6;
-            this.Label_signin.Text = "Already have an account?";
-            this.Label_signin.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.Label_signin.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            this.Label_signin.Click += new System.EventHandler(this.Label_signin_Click);
-            this.Label_signin.MouseEnter += new System.EventHandler(this.Label_signin_MouseEnter);
-            this.Label_signin.MouseLeave += new System.EventHandler(this.Label_signin_MouseLeave);
-            // 
-            // Label_infousername
-            // 
-            this.Label_infousername.AllowParentOverrides = false;
-            this.Label_infousername.AutoEllipsis = false;
-            this.Label_infousername.Cursor = System.Windows.Forms.Cursors.Default;
-            this.Label_infousername.CursorType = System.Windows.Forms.Cursors.Default;
-            this.Label_infousername.Font = new System.Drawing.Font("JetBrains Mono", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label_infousername.ForeColor = System.Drawing.Color.Black;
-            this.Label_infousername.Location = new System.Drawing.Point(107, 105);
-            this.Label_infousername.Name = "Label_infousername";
-            this.Label_infousername.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Label_infousername.Size = new System.Drawing.Size(91, 14);
-            this.Label_infousername.TabIndex = 8;
-            this.Label_infousername.Text = "Your Username";
-            this.Label_infousername.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.Label_infousername.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
-            // Show_pass
-            // 
-            this.Show_pass.BackColor = System.Drawing.Color.White;
-            this.Show_pass.CheckedState.Image = global::Proj1.Properties.Resources.close;
-            this.Show_pass.CheckedState.Parent = this.Show_pass;
-            this.Show_pass.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Show_pass.HoverState.Parent = this.Show_pass;
-            this.Show_pass.Image = global::Proj1.Properties.Resources.show;
-            this.Show_pass.ImageOffset = new System.Drawing.Point(0, 0);
-            this.Show_pass.ImageRotate = 0F;
-            this.Show_pass.Location = new System.Drawing.Point(286, 271);
-            this.Show_pass.Name = "Show_pass";
-            this.Show_pass.PressedState.Parent = this.Show_pass;
-            this.Show_pass.ShadowDecoration.BorderRadius = 5;
-            this.Show_pass.ShadowDecoration.Parent = this.Show_pass;
-            this.Show_pass.Size = new System.Drawing.Size(28, 29);
-            this.Show_pass.TabIndex = 15;
-            this.Show_pass.CheckedChanged += new System.EventHandler(this.Show_pass_CheckedChanged);
-            // 
-            // Label_infopw
-            // 
-            this.Label_infopw.AllowParentOverrides = false;
-            this.Label_infopw.AutoEllipsis = false;
-            this.Label_infopw.Cursor = System.Windows.Forms.Cursors.Default;
-            this.Label_infopw.CursorType = System.Windows.Forms.Cursors.Default;
-            this.Label_infopw.Font = new System.Drawing.Font("JetBrains Mono", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label_infopw.ForeColor = System.Drawing.Color.Black;
-            this.Label_infopw.Location = new System.Drawing.Point(107, 247);
-            this.Label_infopw.Name = "Label_infopw";
-            this.Label_infopw.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Label_infopw.Size = new System.Drawing.Size(91, 14);
-            this.Label_infopw.TabIndex = 11;
-            this.Label_infopw.Text = "Your Password";
-            this.Label_infopw.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.Label_infopw.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
-            // Label_infoemail
-            // 
-            this.Label_infoemail.AllowParentOverrides = false;
-            this.Label_infoemail.AutoEllipsis = false;
-            this.Label_infoemail.Cursor = System.Windows.Forms.Cursors.Default;
-            this.Label_infoemail.CursorType = System.Windows.Forms.Cursors.Default;
-            this.Label_infoemail.Font = new System.Drawing.Font("JetBrains Mono", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label_infoemail.ForeColor = System.Drawing.Color.Black;
-            this.Label_infoemail.Location = new System.Drawing.Point(107, 175);
-            this.Label_infoemail.Name = "Label_infoemail";
-            this.Label_infoemail.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Label_infoemail.Size = new System.Drawing.Size(70, 14);
-            this.Label_infoemail.TabIndex = 7;
-            this.Label_infoemail.Text = "Your Email";
-            this.Label_infoemail.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.Label_infoemail.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
-            // Label_Infosignup
-            // 
-            this.Label_Infosignup.AllowParentOverrides = false;
-            this.Label_Infosignup.AutoEllipsis = false;
-            this.Label_Infosignup.Cursor = System.Windows.Forms.Cursors.Default;
-            this.Label_Infosignup.CursorType = System.Windows.Forms.Cursors.Default;
-            this.Label_Infosignup.Font = new System.Drawing.Font("JetBrains Mono", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label_Infosignup.Location = new System.Drawing.Point(162, 44);
-            this.Label_Infosignup.Name = "Label_Infosignup";
-            this.Label_Infosignup.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Label_Infosignup.Size = new System.Drawing.Size(98, 31);
-            this.Label_Infosignup.TabIndex = 9;
-            this.Label_Infosignup.Text = "Sign Up";
-            this.Label_Infosignup.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.Label_Infosignup.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
             // SignupForm
             // 
