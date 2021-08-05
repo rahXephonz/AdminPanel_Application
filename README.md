@@ -41,9 +41,14 @@ private MySqlConnection connection = new MySqlConnection
  > Harap diperhatikan pula pada bagian Form1.Designer.cs.
  > Kalian harus memahami struktur UI yang dipakai karena jika ada yang tidak sinkron maka program akan otomatis error.
 
-## 📷 Preview Login
+## 📷 Preview Signup dan Signin
 
- <img src="resources/gif/preview.gif" />
+<img src="resources/gif/preview.gif" />
+
+## 📷 Preview Create Data
+
+<img src="resources/gif/Create.gif" />
+
 
 ## 😍 Terima kasih semoga kalian suka! Dan jangan ragu untuk kontak saya di :
 <p>
