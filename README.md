@@ -50,7 +50,7 @@ private MySqlConnection connection = new MySqlConnection
 <img src="resources/gif/Create.gif" />
 
 
-## 😍 Terima kasih semoga kalian suka! Dan jangan ragu untuk kontak saya di :
+Terima Kasih😍 semoga kalian suka! jangan lupa kasih star ya! Dan jangan ragu pula untuk kontak saya di :
 <p>
  <a href="https://www.instagram.com/rizukyy27_" target="_blank"><img src="https://img.shields.io/badge/Instagram-%23E4405F.svg?&style=flat-square&logo=instagram&logoColor=white" height="32px" alt="Instagram"></a>
  <a href="https://www.facebook.com/Rahxephonz" target="_blank"><img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white" height="32px" alt="Facebook"></a>
