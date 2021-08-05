@@ -59,30 +59,55 @@ namespace Proj1
             this.Button_dashboard = new Guna.UI2.WinForms.Guna2GradientButton();
             this.Logo_resize = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.Button_show = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.Button_hide = new Guna.UI2.WinForms.Guna2PictureBox();
             this.bunifuPages1 = new Bunifu.UI.WinForms.BunifuPages();
             this.Dashboard = new System.Windows.Forms.TabPage();
+            this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
+            this.bunifuLabel10 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.bunifuLabel11 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
+            this.bunifuLabel8 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.bunifuLabel9 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.Label_count = new Bunifu.UI.WinForms.BunifuLabel();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.Label_status = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
             this.Product = new System.Windows.Forms.TabPage();
-            this.Button_searchprod = new Guna.UI2.WinForms.Guna2Button();
             this.Data_tableprod = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column8 = new System.Windows.Forms.DataGridViewImageColumn();
             this.Button_editprod = new Guna.UI2.WinForms.Guna2Button();
-            this.Button_deleteprod = new Guna.UI2.WinForms.Guna2Button();
             this.Button_createprod = new Guna.UI2.WinForms.Guna2Button();
             this.Form_searchprod = new Guna.UI2.WinForms.Guna2TextBox();
             this.bunifuLabel2 = new Bunifu.UI.WinForms.BunifuLabel();
             this.Category = new System.Windows.Forms.TabPage();
-            this.Button_editcat = new Guna.UI2.WinForms.Guna2Button();
-            this.Button_createcat = new Guna.UI2.WinForms.Guna2Button();
             this.Data_tablecat = new System.Windows.Forms.DataGridView();
-            this.Button_searchcat = new Guna.UI2.WinForms.Guna2Button();
-            this.Button_deletecat = new Guna.UI2.WinForms.Guna2Button();
-            this.Form_searchcat = new Guna.UI2.WinForms.Guna2TextBox();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.Separator_cat = new Guna.UI2.WinForms.Guna2Separator();
             this.bunifuLabel3 = new Bunifu.UI.WinForms.BunifuLabel();
             this.Users = new System.Windows.Forms.TabPage();
             this.bunifuLabel4 = new Bunifu.UI.WinForms.BunifuLabel();
             this.Settings = new System.Windows.Forms.TabPage();
             this.bunifuLabel5 = new Bunifu.UI.WinForms.BunifuLabel();
             this.Create_Editprod = new System.Windows.Forms.TabPage();
+            this.Form_no = new Guna.UI2.WinForms.Guna2TextBox();
+            this.bunifuLabel7 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.Button_update = new Guna.UI2.WinForms.Guna2Button();
+            this.Insert_image = new System.Windows.Forms.PictureBox();
             this.Button_delete = new Guna.UI2.WinForms.Guna2Button();
             this.Button_save = new Guna.UI2.WinForms.Guna2Button();
             this.bunifuLabel13 = new Bunifu.UI.WinForms.BunifuLabel();
@@ -100,15 +125,24 @@ namespace Proj1
             this.Label_category = new Bunifu.UI.WinForms.BunifuLabel();
             this.Label_tittle = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel6 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.ImageText = new System.Windows.Forms.TextBox();
             this.Image_greetings = new System.Windows.Forms.PictureBox();
             this.guna2Transition2 = new Guna.UI2.WinForms.Guna2Transition();
-            this.Button_hide = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.Button_show = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.bunifuSnackbar1 = new Bunifu.UI.WinForms.BunifuSnackbar(this.components);
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.Logo_pict)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Logo_resize)).BeginInit();
             this.guna2Panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Button_show)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Button_hide)).BeginInit();
             this.bunifuPages1.SuspendLayout();
             this.Dashboard.SuspendLayout();
+            this.guna2Panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
+            this.guna2Panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
+            this.guna2Panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.Product.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Data_tableprod)).BeginInit();
             this.Category.SuspendLayout();
@@ -116,9 +150,8 @@ namespace Proj1
             this.Users.SuspendLayout();
             this.Settings.SuspendLayout();
             this.Create_Editprod.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Insert_image)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Image_greetings)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Button_hide)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Button_show)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2Elipse1
@@ -196,7 +229,7 @@ namespace Proj1
             this.guna2Transition1.DefaultAnimation = animation1;
             this.guna2Transition1.Interval = 30;
             this.guna2Transition1.MaxAnimationTime = 3000;
-            this.guna2Transition1.TimeStep = 0.1F;
+            this.guna2Transition1.TimeStep = 0.07F;
             // 
             // Label_username
             // 
@@ -463,6 +496,41 @@ namespace Proj1
             this.guna2Panel1.Size = new System.Drawing.Size(281, 683);
             this.guna2Panel1.TabIndex = 13;
             // 
+            // Button_show
+            // 
+            this.Button_show.BackColor = System.Drawing.Color.Transparent;
+            this.Button_show.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2Transition1.SetDecoration(this.Button_show, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.guna2Transition2.SetDecoration(this.Button_show, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.Button_show.Image = ((System.Drawing.Image)(resources.GetObject("Button_show.Image")));
+            this.Button_show.ImageRotate = 0F;
+            this.Button_show.Location = new System.Drawing.Point(12, 12);
+            this.Button_show.Name = "Button_show";
+            this.Button_show.ShadowDecoration.Parent = this.Button_show;
+            this.Button_show.Size = new System.Drawing.Size(30, 30);
+            this.Button_show.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Button_show.TabIndex = 24;
+            this.Button_show.TabStop = false;
+            this.Button_show.Visible = false;
+            this.Button_show.Click += new System.EventHandler(this.Button_show_Click);
+            // 
+            // Button_hide
+            // 
+            this.Button_hide.BackColor = System.Drawing.Color.Transparent;
+            this.Button_hide.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2Transition1.SetDecoration(this.Button_hide, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.guna2Transition2.SetDecoration(this.Button_hide, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.Button_hide.Image = ((System.Drawing.Image)(resources.GetObject("Button_hide.Image")));
+            this.Button_hide.ImageRotate = 0F;
+            this.Button_hide.Location = new System.Drawing.Point(239, 10);
+            this.Button_hide.Name = "Button_hide";
+            this.Button_hide.ShadowDecoration.Parent = this.Button_hide;
+            this.Button_hide.Size = new System.Drawing.Size(30, 30);
+            this.Button_hide.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Button_hide.TabIndex = 23;
+            this.Button_hide.TabStop = false;
+            this.Button_hide.Click += new System.EventHandler(this.Button_hide_Click);
+            // 
             // bunifuPages1
             // 
             this.bunifuPages1.Alignment = System.Windows.Forms.TabAlignment.Bottom;
@@ -506,15 +574,219 @@ namespace Proj1
             // Dashboard
             // 
             this.Dashboard.BackColor = System.Drawing.Color.Gainsboro;
+            this.Dashboard.Controls.Add(this.guna2Panel4);
+            this.Dashboard.Controls.Add(this.guna2Panel3);
+            this.Dashboard.Controls.Add(this.guna2Panel2);
             this.Dashboard.Controls.Add(this.bunifuLabel1);
             this.guna2Transition2.SetDecoration(this.Dashboard, Guna.UI2.AnimatorNS.DecorationType.None);
             this.guna2Transition1.SetDecoration(this.Dashboard, Guna.UI2.AnimatorNS.DecorationType.None);
             this.Dashboard.Location = new System.Drawing.Point(4, 4);
             this.Dashboard.Name = "Dashboard";
             this.Dashboard.Padding = new System.Windows.Forms.Padding(3);
-            this.Dashboard.Size = new System.Drawing.Size(1104, 621);
+            this.Dashboard.Size = new System.Drawing.Size(1104, 606);
             this.Dashboard.TabIndex = 0;
             this.Dashboard.Text = "Dashboard";
+            // 
+            // guna2Panel4
+            // 
+            this.guna2Panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(184)))), ((int)(((byte)(187)))));
+            this.guna2Panel4.Controls.Add(this.bunifuLabel10);
+            this.guna2Panel4.Controls.Add(this.guna2PictureBox3);
+            this.guna2Panel4.Controls.Add(this.bunifuLabel11);
+            this.guna2Transition2.SetDecoration(this.guna2Panel4, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.guna2Transition1.SetDecoration(this.guna2Panel4, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.guna2Panel4.Location = new System.Drawing.Point(637, 82);
+            this.guna2Panel4.Name = "guna2Panel4";
+            this.guna2Panel4.ShadowDecoration.BorderRadius = 20;
+            this.guna2Panel4.ShadowDecoration.Parent = this.guna2Panel4;
+            this.guna2Panel4.Size = new System.Drawing.Size(200, 139);
+            this.guna2Panel4.TabIndex = 23;
+            // 
+            // bunifuLabel10
+            // 
+            this.bunifuLabel10.AllowParentOverrides = false;
+            this.bunifuLabel10.AutoEllipsis = false;
+            this.bunifuLabel10.CursorType = null;
+            this.guna2Transition1.SetDecoration(this.bunifuLabel10, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.guna2Transition2.SetDecoration(this.bunifuLabel10, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.bunifuLabel10.Font = new System.Drawing.Font("Poppins", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuLabel10.ForeColor = System.Drawing.Color.White;
+            this.bunifuLabel10.Location = new System.Drawing.Point(35, 87);
+            this.bunifuLabel10.Name = "bunifuLabel10";
+            this.bunifuLabel10.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel10.Size = new System.Drawing.Size(14, 42);
+            this.bunifuLabel10.TabIndex = 0;
+            this.bunifuLabel10.Text = "2";
+            this.bunifuLabel10.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel10.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // guna2PictureBox3
+            // 
+            this.guna2PictureBox3.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Transition1.SetDecoration(this.guna2PictureBox3, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.guna2Transition2.SetDecoration(this.guna2PictureBox3, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.guna2PictureBox3.FillColor = System.Drawing.Color.Transparent;
+            this.guna2PictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox3.Image")));
+            this.guna2PictureBox3.ImageRotate = 0F;
+            this.guna2PictureBox3.Location = new System.Drawing.Point(73, 17);
+            this.guna2PictureBox3.Name = "guna2PictureBox3";
+            this.guna2PictureBox3.ShadowDecoration.Parent = this.guna2PictureBox3;
+            this.guna2PictureBox3.Size = new System.Drawing.Size(56, 60);
+            this.guna2PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox3.TabIndex = 24;
+            this.guna2PictureBox3.TabStop = false;
+            // 
+            // bunifuLabel11
+            // 
+            this.bunifuLabel11.AllowParentOverrides = false;
+            this.bunifuLabel11.AutoEllipsis = false;
+            this.bunifuLabel11.CursorType = null;
+            this.guna2Transition1.SetDecoration(this.bunifuLabel11, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.guna2Transition2.SetDecoration(this.bunifuLabel11, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.bunifuLabel11.Font = new System.Drawing.Font("Poppins", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuLabel11.ForeColor = System.Drawing.Color.White;
+            this.bunifuLabel11.Location = new System.Drawing.Point(63, 86);
+            this.bunifuLabel11.Name = "bunifuLabel11";
+            this.bunifuLabel11.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel11.Size = new System.Drawing.Size(115, 42);
+            this.bunifuLabel11.TabIndex = 0;
+            this.bunifuLabel11.Text = "Category";
+            this.bunifuLabel11.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel11.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // guna2Panel3
+            // 
+            this.guna2Panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(184)))), ((int)(((byte)(187)))));
+            this.guna2Panel3.Controls.Add(this.bunifuLabel8);
+            this.guna2Panel3.Controls.Add(this.guna2PictureBox2);
+            this.guna2Panel3.Controls.Add(this.bunifuLabel9);
+            this.guna2Transition2.SetDecoration(this.guna2Panel3, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.guna2Transition1.SetDecoration(this.guna2Panel3, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.guna2Panel3.Location = new System.Drawing.Point(329, 82);
+            this.guna2Panel3.Name = "guna2Panel3";
+            this.guna2Panel3.ShadowDecoration.BorderRadius = 20;
+            this.guna2Panel3.ShadowDecoration.Parent = this.guna2Panel3;
+            this.guna2Panel3.Size = new System.Drawing.Size(200, 139);
+            this.guna2Panel3.TabIndex = 22;
+            // 
+            // bunifuLabel8
+            // 
+            this.bunifuLabel8.AllowParentOverrides = false;
+            this.bunifuLabel8.AutoEllipsis = false;
+            this.bunifuLabel8.CursorType = null;
+            this.guna2Transition1.SetDecoration(this.bunifuLabel8, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.guna2Transition2.SetDecoration(this.bunifuLabel8, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.bunifuLabel8.Font = new System.Drawing.Font("Poppins", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuLabel8.ForeColor = System.Drawing.Color.White;
+            this.bunifuLabel8.Location = new System.Drawing.Point(43, 87);
+            this.bunifuLabel8.Name = "bunifuLabel8";
+            this.bunifuLabel8.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel8.Size = new System.Drawing.Size(16, 42);
+            this.bunifuLabel8.TabIndex = 0;
+            this.bunifuLabel8.Text = "0";
+            this.bunifuLabel8.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel8.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // guna2PictureBox2
+            // 
+            this.guna2PictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Transition1.SetDecoration(this.guna2PictureBox2, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.guna2Transition2.SetDecoration(this.guna2PictureBox2, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.guna2PictureBox2.FillColor = System.Drawing.Color.Transparent;
+            this.guna2PictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox2.Image")));
+            this.guna2PictureBox2.ImageRotate = 0F;
+            this.guna2PictureBox2.Location = new System.Drawing.Point(67, 3);
+            this.guna2PictureBox2.Name = "guna2PictureBox2";
+            this.guna2PictureBox2.ShadowDecoration.Parent = this.guna2PictureBox2;
+            this.guna2PictureBox2.Size = new System.Drawing.Size(66, 79);
+            this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox2.TabIndex = 24;
+            this.guna2PictureBox2.TabStop = false;
+            // 
+            // bunifuLabel9
+            // 
+            this.bunifuLabel9.AllowParentOverrides = false;
+            this.bunifuLabel9.AutoEllipsis = false;
+            this.bunifuLabel9.CursorType = null;
+            this.guna2Transition1.SetDecoration(this.bunifuLabel9, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.guna2Transition2.SetDecoration(this.bunifuLabel9, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.bunifuLabel9.Font = new System.Drawing.Font("Poppins", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuLabel9.ForeColor = System.Drawing.Color.White;
+            this.bunifuLabel9.Location = new System.Drawing.Point(72, 86);
+            this.bunifuLabel9.Name = "bunifuLabel9";
+            this.bunifuLabel9.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel9.Size = new System.Drawing.Size(93, 42);
+            this.bunifuLabel9.TabIndex = 0;
+            this.bunifuLabel9.Text = "Visitors";
+            this.bunifuLabel9.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel9.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // guna2Panel2
+            // 
+            this.guna2Panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(184)))), ((int)(((byte)(187)))));
+            this.guna2Panel2.Controls.Add(this.Label_count);
+            this.guna2Panel2.Controls.Add(this.guna2PictureBox1);
+            this.guna2Panel2.Controls.Add(this.Label_status);
+            this.guna2Transition2.SetDecoration(this.guna2Panel2, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.guna2Transition1.SetDecoration(this.guna2Panel2, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.guna2Panel2.Location = new System.Drawing.Point(12, 82);
+            this.guna2Panel2.Name = "guna2Panel2";
+            this.guna2Panel2.ShadowDecoration.BorderRadius = 20;
+            this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
+            this.guna2Panel2.Size = new System.Drawing.Size(200, 139);
+            this.guna2Panel2.TabIndex = 21;
+            // 
+            // Label_count
+            // 
+            this.Label_count.AllowParentOverrides = false;
+            this.Label_count.AutoEllipsis = false;
+            this.Label_count.CursorType = null;
+            this.guna2Transition1.SetDecoration(this.Label_count, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.guna2Transition2.SetDecoration(this.Label_count, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.Label_count.Font = new System.Drawing.Font("Poppins", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_count.ForeColor = System.Drawing.Color.White;
+            this.Label_count.Location = new System.Drawing.Point(37, 87);
+            this.Label_count.Name = "Label_count";
+            this.Label_count.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Label_count.Size = new System.Drawing.Size(16, 42);
+            this.Label_count.TabIndex = 0;
+            this.Label_count.Text = "0";
+            this.Label_count.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.Label_count.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // guna2PictureBox1
+            // 
+            this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Transition1.SetDecoration(this.guna2PictureBox1, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.guna2Transition2.SetDecoration(this.guna2PictureBox1, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.guna2PictureBox1.FillColor = System.Drawing.Color.Transparent;
+            this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
+            this.guna2PictureBox1.ImageRotate = 0F;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(68, 17);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
+            this.guna2PictureBox1.Size = new System.Drawing.Size(56, 60);
+            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox1.TabIndex = 24;
+            this.guna2PictureBox1.TabStop = false;
+            // 
+            // Label_status
+            // 
+            this.Label_status.AllowParentOverrides = false;
+            this.Label_status.AutoEllipsis = false;
+            this.Label_status.CursorType = null;
+            this.guna2Transition1.SetDecoration(this.Label_status, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.guna2Transition2.SetDecoration(this.Label_status, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.Label_status.Font = new System.Drawing.Font("Poppins", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_status.ForeColor = System.Drawing.Color.White;
+            this.Label_status.Location = new System.Drawing.Point(67, 86);
+            this.Label_status.Name = "Label_status";
+            this.Label_status.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Label_status.Size = new System.Drawing.Size(97, 42);
+            this.Label_status.TabIndex = 0;
+            this.Label_status.Text = "Product";
+            this.Label_status.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.Label_status.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
             // bunifuLabel1
             // 
@@ -527,19 +799,17 @@ namespace Proj1
             this.bunifuLabel1.Location = new System.Drawing.Point(12, 11);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel1.Size = new System.Drawing.Size(135, 42);
+            this.bunifuLabel1.Size = new System.Drawing.Size(197, 42);
             this.bunifuLabel1.TabIndex = 20;
-            this.bunifuLabel1.Text = "Dashboard";
+            this.bunifuLabel1.Text = "Your Dashboard";
             this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
             // Product
             // 
             this.Product.BackColor = System.Drawing.Color.Gainsboro;
-            this.Product.Controls.Add(this.Button_searchprod);
             this.Product.Controls.Add(this.Data_tableprod);
             this.Product.Controls.Add(this.Button_editprod);
-            this.Product.Controls.Add(this.Button_deleteprod);
             this.Product.Controls.Add(this.Button_createprod);
             this.Product.Controls.Add(this.Form_searchprod);
             this.Product.Controls.Add(this.bunifuLabel2);
@@ -552,39 +822,10 @@ namespace Proj1
             this.Product.TabIndex = 1;
             this.Product.Text = "Product";
             // 
-            // Button_searchprod
-            // 
-            this.Button_searchprod.BorderRadius = 10;
-            this.Button_searchprod.CheckedState.Parent = this.Button_searchprod;
-            this.Button_searchprod.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Button_searchprod.CustomImages.Parent = this.Button_searchprod;
-            this.guna2Transition2.SetDecoration(this.Button_searchprod, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.guna2Transition1.SetDecoration(this.Button_searchprod, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.Button_searchprod.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.Button_searchprod.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.Button_searchprod.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.Button_searchprod.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.Button_searchprod.DisabledState.Parent = this.Button_searchprod;
-            this.Button_searchprod.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
-            this.Button_searchprod.Font = new System.Drawing.Font("Poppins", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Button_searchprod.ForeColor = System.Drawing.Color.White;
-            this.Button_searchprod.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
-            this.Button_searchprod.HoverState.Parent = this.Button_searchprod;
-            this.Button_searchprod.Image = ((System.Drawing.Image)(resources.GetObject("Button_searchprod.Image")));
-            this.Button_searchprod.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.Button_searchprod.ImageOffset = new System.Drawing.Point(2, -2);
-            this.Button_searchprod.ImageSize = new System.Drawing.Size(17, 17);
-            this.Button_searchprod.Location = new System.Drawing.Point(452, 11);
-            this.Button_searchprod.Name = "Button_searchprod";
-            this.Button_searchprod.ShadowDecoration.Parent = this.Button_searchprod;
-            this.Button_searchprod.Size = new System.Drawing.Size(99, 36);
-            this.Button_searchprod.TabIndex = 24;
-            this.Button_searchprod.Text = "Search";
-            this.Button_searchprod.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.Button_searchprod.TextOffset = new System.Drawing.Point(-2, 1);
-            // 
             // Data_tableprod
             // 
+            this.Data_tableprod.AllowUserToAddRows = false;
+            this.Data_tableprod.AllowUserToDeleteRows = false;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
             this.Data_tableprod.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.Data_tableprod.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
@@ -599,6 +840,15 @@ namespace Proj1
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.Data_tableprod.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.Data_tableprod.ColumnHeadersHeight = 25;
+            this.Data_tableprod.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2,
+            this.Column3,
+            this.Column4,
+            this.Column5,
+            this.Column6,
+            this.Column7,
+            this.Column8});
             this.guna2Transition2.SetDecoration(this.Data_tableprod, Guna.UI2.AnimatorNS.DecorationType.None);
             this.guna2Transition1.SetDecoration(this.Data_tableprod, Guna.UI2.AnimatorNS.DecorationType.None);
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
@@ -612,6 +862,7 @@ namespace Proj1
             this.Data_tableprod.GridColor = System.Drawing.Color.Silver;
             this.Data_tableprod.Location = new System.Drawing.Point(8, 109);
             this.Data_tableprod.Name = "Data_tableprod";
+            this.Data_tableprod.ReadOnly = true;
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle4.BackColor = System.Drawing.Color.WhiteSmoke;
             dataGridViewCellStyle4.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -623,9 +874,67 @@ namespace Proj1
             dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle5.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Data_tableprod.RowsDefaultCellStyle = dataGridViewCellStyle5;
-            this.Data_tableprod.RowTemplate.Height = 35;
+            this.Data_tableprod.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.Data_tableprod.RowTemplate.Height = 50;
             this.Data_tableprod.Size = new System.Drawing.Size(860, 519);
             this.Data_tableprod.TabIndex = 0;
+            // 
+            // Column1
+            // 
+            this.Column1.DataPropertyName = "No";
+            this.Column1.HeaderText = "No";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            // 
+            // Column2
+            // 
+            this.Column2.DataPropertyName = "Title";
+            this.Column2.HeaderText = "Title";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            // 
+            // Column3
+            // 
+            this.Column3.DataPropertyName = "Category";
+            this.Column3.HeaderText = "Category";
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            // 
+            // Column4
+            // 
+            this.Column4.DataPropertyName = "SubCategory";
+            this.Column4.HeaderText = "SubCategory";
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            // 
+            // Column5
+            // 
+            this.Column5.DataPropertyName = "SuperSubCat";
+            this.Column5.HeaderText = "SuperSubCat";
+            this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
+            // 
+            // Column6
+            // 
+            this.Column6.DataPropertyName = "Code";
+            this.Column6.HeaderText = "Code";
+            this.Column6.Name = "Column6";
+            this.Column6.ReadOnly = true;
+            // 
+            // Column7
+            // 
+            this.Column7.DataPropertyName = "Price";
+            this.Column7.HeaderText = "Price";
+            this.Column7.Name = "Column7";
+            this.Column7.ReadOnly = true;
+            // 
+            // Column8
+            // 
+            this.Column8.DataPropertyName = "Picture";
+            this.Column8.HeaderText = "Picture";
+            this.Column8.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.Column8.Name = "Column8";
+            this.Column8.ReadOnly = true;
             // 
             // Button_editprod
             // 
@@ -649,44 +958,14 @@ namespace Proj1
             this.Button_editprod.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.Button_editprod.ImageOffset = new System.Drawing.Point(10, -2);
             this.Button_editprod.ImageSize = new System.Drawing.Size(17, 17);
-            this.Button_editprod.Location = new System.Drawing.Point(556, 11);
+            this.Button_editprod.Location = new System.Drawing.Point(662, 11);
             this.Button_editprod.Name = "Button_editprod";
             this.Button_editprod.ShadowDecoration.Parent = this.Button_editprod;
             this.Button_editprod.Size = new System.Drawing.Size(99, 36);
             this.Button_editprod.TabIndex = 23;
             this.Button_editprod.Text = "Edit";
             this.Button_editprod.TextOffset = new System.Drawing.Point(-8, 1);
-            // 
-            // Button_deleteprod
-            // 
-            this.Button_deleteprod.BorderRadius = 10;
-            this.Button_deleteprod.CheckedState.Parent = this.Button_deleteprod;
-            this.Button_deleteprod.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Button_deleteprod.CustomImages.Parent = this.Button_deleteprod;
-            this.guna2Transition2.SetDecoration(this.Button_deleteprod, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.guna2Transition1.SetDecoration(this.Button_deleteprod, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.Button_deleteprod.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.Button_deleteprod.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.Button_deleteprod.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.Button_deleteprod.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.Button_deleteprod.DisabledState.Parent = this.Button_deleteprod;
-            this.Button_deleteprod.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
-            this.Button_deleteprod.Font = new System.Drawing.Font("Poppins", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Button_deleteprod.ForeColor = System.Drawing.Color.White;
-            this.Button_deleteprod.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
-            this.Button_deleteprod.HoverState.Parent = this.Button_deleteprod;
-            this.Button_deleteprod.Image = ((System.Drawing.Image)(resources.GetObject("Button_deleteprod.Image")));
-            this.Button_deleteprod.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.Button_deleteprod.ImageOffset = new System.Drawing.Point(4, -2);
-            this.Button_deleteprod.ImageSize = new System.Drawing.Size(17, 17);
-            this.Button_deleteprod.Location = new System.Drawing.Point(767, 11);
-            this.Button_deleteprod.Name = "Button_deleteprod";
-            this.Button_deleteprod.ShadowDecoration.Parent = this.Button_deleteprod;
-            this.Button_deleteprod.Size = new System.Drawing.Size(99, 36);
-            this.Button_deleteprod.TabIndex = 0;
-            this.Button_deleteprod.Text = "Delete";
-            this.Button_deleteprod.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.Button_deleteprod.TextOffset = new System.Drawing.Point(-2, 1);
+            this.Button_editprod.Click += new System.EventHandler(this.Button_editprod_Click);
             // 
             // Button_createprod
             // 
@@ -709,7 +988,7 @@ namespace Proj1
             this.Button_createprod.Image = ((System.Drawing.Image)(resources.GetObject("Button_createprod.Image")));
             this.Button_createprod.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.Button_createprod.ImageOffset = new System.Drawing.Point(-1, -1);
-            this.Button_createprod.Location = new System.Drawing.Point(662, 11);
+            this.Button_createprod.Location = new System.Drawing.Point(767, 11);
             this.Button_createprod.Name = "Button_createprod";
             this.Button_createprod.ShadowDecoration.Parent = this.Button_createprod;
             this.Button_createprod.Size = new System.Drawing.Size(99, 36);
@@ -732,12 +1011,16 @@ namespace Proj1
             this.Form_searchprod.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.Form_searchprod.DisabledState.Parent = this.Form_searchprod;
             this.Form_searchprod.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.Form_searchprod.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.Form_searchprod.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(184)))), ((int)(((byte)(187)))));
+            this.Form_searchprod.FocusedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(184)))), ((int)(((byte)(187)))));
             this.Form_searchprod.FocusedState.Parent = this.Form_searchprod;
+            this.Form_searchprod.FocusedState.PlaceholderForeColor = System.Drawing.Color.Black;
             this.Form_searchprod.Font = new System.Drawing.Font("Poppins Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Form_searchprod.ForeColor = System.Drawing.Color.Black;
-            this.Form_searchprod.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.Form_searchprod.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(184)))), ((int)(((byte)(187)))));
+            this.Form_searchprod.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(184)))), ((int)(((byte)(187)))));
             this.Form_searchprod.HoverState.Parent = this.Form_searchprod;
+            this.Form_searchprod.HoverState.PlaceholderForeColor = System.Drawing.Color.Black;
             this.Form_searchprod.IconLeft = ((System.Drawing.Image)(resources.GetObject("Form_searchprod.IconLeft")));
             this.Form_searchprod.IconLeftOffset = new System.Drawing.Point(10, 0);
             this.Form_searchprod.Location = new System.Drawing.Point(8, 60);
@@ -749,8 +1032,9 @@ namespace Proj1
             this.Form_searchprod.SelectedText = "";
             this.Form_searchprod.ShadowDecoration.Parent = this.Form_searchprod;
             this.Form_searchprod.Size = new System.Drawing.Size(862, 36);
-            this.Form_searchprod.TabIndex = 20;
+            this.Form_searchprod.TabIndex = 0;
             this.Form_searchprod.TextOffset = new System.Drawing.Point(5, 0);
+            this.Form_searchprod.TextChanged += new System.EventHandler(this.Form_searchprod_TextChanged);
             // 
             // bunifuLabel2
             // 
@@ -772,12 +1056,8 @@ namespace Proj1
             // Category
             // 
             this.Category.BackColor = System.Drawing.Color.Gainsboro;
-            this.Category.Controls.Add(this.Button_editcat);
-            this.Category.Controls.Add(this.Button_createcat);
             this.Category.Controls.Add(this.Data_tablecat);
-            this.Category.Controls.Add(this.Button_searchcat);
-            this.Category.Controls.Add(this.Button_deletecat);
-            this.Category.Controls.Add(this.Form_searchcat);
+            this.Category.Controls.Add(this.Separator_cat);
             this.Category.Controls.Add(this.bunifuLabel3);
             this.guna2Transition2.SetDecoration(this.Category, Guna.UI2.AnimatorNS.DecorationType.None);
             this.guna2Transition1.SetDecoration(this.Category, Guna.UI2.AnimatorNS.DecorationType.None);
@@ -788,68 +1068,10 @@ namespace Proj1
             this.Category.TabIndex = 2;
             this.Category.Text = "Category";
             // 
-            // Button_editcat
-            // 
-            this.Button_editcat.BorderRadius = 10;
-            this.Button_editcat.CheckedState.Parent = this.Button_editcat;
-            this.Button_editcat.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Button_editcat.CustomImages.Parent = this.Button_editcat;
-            this.guna2Transition2.SetDecoration(this.Button_editcat, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.guna2Transition1.SetDecoration(this.Button_editcat, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.Button_editcat.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.Button_editcat.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.Button_editcat.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.Button_editcat.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.Button_editcat.DisabledState.Parent = this.Button_editcat;
-            this.Button_editcat.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
-            this.Button_editcat.Font = new System.Drawing.Font("Poppins", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Button_editcat.ForeColor = System.Drawing.Color.White;
-            this.Button_editcat.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
-            this.Button_editcat.HoverState.Parent = this.Button_editcat;
-            this.Button_editcat.Image = ((System.Drawing.Image)(resources.GetObject("Button_editcat.Image")));
-            this.Button_editcat.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.Button_editcat.ImageOffset = new System.Drawing.Point(10, -2);
-            this.Button_editcat.ImageSize = new System.Drawing.Size(17, 17);
-            this.Button_editcat.Location = new System.Drawing.Point(557, 11);
-            this.Button_editcat.Name = "Button_editcat";
-            this.Button_editcat.ShadowDecoration.Parent = this.Button_editcat;
-            this.Button_editcat.Size = new System.Drawing.Size(99, 36);
-            this.Button_editcat.TabIndex = 27;
-            this.Button_editcat.Text = "Edit";
-            this.Button_editcat.TextOffset = new System.Drawing.Point(-8, 1);
-            // 
-            // Button_createcat
-            // 
-            this.Button_createcat.BorderRadius = 10;
-            this.Button_createcat.CheckedState.Parent = this.Button_createcat;
-            this.Button_createcat.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Button_createcat.CustomImages.Parent = this.Button_createcat;
-            this.guna2Transition2.SetDecoration(this.Button_createcat, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.guna2Transition1.SetDecoration(this.Button_createcat, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.Button_createcat.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.Button_createcat.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.Button_createcat.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.Button_createcat.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.Button_createcat.DisabledState.Parent = this.Button_createcat;
-            this.Button_createcat.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
-            this.Button_createcat.Font = new System.Drawing.Font("Poppins", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Button_createcat.ForeColor = System.Drawing.Color.White;
-            this.Button_createcat.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
-            this.Button_createcat.HoverState.Parent = this.Button_createcat;
-            this.Button_createcat.Image = ((System.Drawing.Image)(resources.GetObject("Button_createcat.Image")));
-            this.Button_createcat.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.Button_createcat.ImageOffset = new System.Drawing.Point(-1, -1);
-            this.Button_createcat.Location = new System.Drawing.Point(662, 11);
-            this.Button_createcat.Name = "Button_createcat";
-            this.Button_createcat.ShadowDecoration.Parent = this.Button_createcat;
-            this.Button_createcat.Size = new System.Drawing.Size(99, 36);
-            this.Button_createcat.TabIndex = 26;
-            this.Button_createcat.Text = "Create";
-            this.Button_createcat.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.Button_createcat.TextOffset = new System.Drawing.Point(-2, 1);
-            // 
             // Data_tablecat
             // 
+            this.Data_tablecat.AllowUserToAddRows = false;
+            this.Data_tablecat.AllowUserToDeleteRows = false;
             dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
             this.Data_tablecat.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle6;
             this.Data_tablecat.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
@@ -864,6 +1086,12 @@ namespace Proj1
             dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.Data_tablecat.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.Data_tablecat.ColumnHeadersHeight = 25;
+            this.Data_tablecat.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4,
+            this.dataGridViewTextBoxColumn5,
+            this.dataGridViewImageColumn1});
             this.guna2Transition2.SetDecoration(this.Data_tablecat, Guna.UI2.AnimatorNS.DecorationType.None);
             this.guna2Transition1.SetDecoration(this.Data_tablecat, Guna.UI2.AnimatorNS.DecorationType.None);
             dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
@@ -875,8 +1103,9 @@ namespace Proj1
             dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.Data_tablecat.DefaultCellStyle = dataGridViewCellStyle8;
             this.Data_tablecat.GridColor = System.Drawing.Color.Silver;
-            this.Data_tablecat.Location = new System.Drawing.Point(8, 109);
+            this.Data_tablecat.Location = new System.Drawing.Point(6, 73);
             this.Data_tablecat.Name = "Data_tablecat";
+            this.Data_tablecat.ReadOnly = true;
             dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle9.BackColor = System.Drawing.Color.WhiteSmoke;
             dataGridViewCellStyle9.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -888,104 +1117,57 @@ namespace Proj1
             dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle10.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Data_tablecat.RowsDefaultCellStyle = dataGridViewCellStyle10;
-            this.Data_tablecat.RowTemplate.Height = 35;
-            this.Data_tablecat.Size = new System.Drawing.Size(860, 519);
-            this.Data_tablecat.TabIndex = 25;
+            this.Data_tablecat.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.Data_tablecat.RowTemplate.Height = 50;
+            this.Data_tablecat.Size = new System.Drawing.Size(860, 567);
+            this.Data_tablecat.TabIndex = 1;
             // 
-            // Button_searchcat
+            // dataGridViewTextBoxColumn1
             // 
-            this.Button_searchcat.BorderRadius = 10;
-            this.Button_searchcat.CheckedState.Parent = this.Button_searchcat;
-            this.Button_searchcat.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Button_searchcat.CustomImages.Parent = this.Button_searchcat;
-            this.guna2Transition2.SetDecoration(this.Button_searchcat, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.guna2Transition1.SetDecoration(this.Button_searchcat, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.Button_searchcat.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.Button_searchcat.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.Button_searchcat.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.Button_searchcat.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.Button_searchcat.DisabledState.Parent = this.Button_searchcat;
-            this.Button_searchcat.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
-            this.Button_searchcat.Font = new System.Drawing.Font("Poppins", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Button_searchcat.ForeColor = System.Drawing.Color.White;
-            this.Button_searchcat.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
-            this.Button_searchcat.HoverState.Parent = this.Button_searchcat;
-            this.Button_searchcat.Image = ((System.Drawing.Image)(resources.GetObject("Button_searchcat.Image")));
-            this.Button_searchcat.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.Button_searchcat.ImageOffset = new System.Drawing.Point(2, -2);
-            this.Button_searchcat.ImageSize = new System.Drawing.Size(17, 17);
-            this.Button_searchcat.Location = new System.Drawing.Point(452, 11);
-            this.Button_searchcat.Name = "Button_searchcat";
-            this.Button_searchcat.ShadowDecoration.Parent = this.Button_searchcat;
-            this.Button_searchcat.Size = new System.Drawing.Size(99, 36);
-            this.Button_searchcat.TabIndex = 24;
-            this.Button_searchcat.Text = "Search";
-            this.Button_searchcat.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.Button_searchcat.TextOffset = new System.Drawing.Point(-2, 1);
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "No";
+            this.dataGridViewTextBoxColumn1.HeaderText = "No";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
             // 
-            // Button_deletecat
+            // dataGridViewTextBoxColumn3
             // 
-            this.Button_deletecat.BorderRadius = 10;
-            this.Button_deletecat.CheckedState.Parent = this.Button_deletecat;
-            this.Button_deletecat.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Button_deletecat.CustomImages.Parent = this.Button_deletecat;
-            this.guna2Transition2.SetDecoration(this.Button_deletecat, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.guna2Transition1.SetDecoration(this.Button_deletecat, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.Button_deletecat.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.Button_deletecat.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.Button_deletecat.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.Button_deletecat.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.Button_deletecat.DisabledState.Parent = this.Button_deletecat;
-            this.Button_deletecat.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
-            this.Button_deletecat.Font = new System.Drawing.Font("Poppins", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Button_deletecat.ForeColor = System.Drawing.Color.White;
-            this.Button_deletecat.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
-            this.Button_deletecat.HoverState.Parent = this.Button_deletecat;
-            this.Button_deletecat.Image = ((System.Drawing.Image)(resources.GetObject("Button_deletecat.Image")));
-            this.Button_deletecat.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.Button_deletecat.ImageOffset = new System.Drawing.Point(4, -2);
-            this.Button_deletecat.ImageSize = new System.Drawing.Size(17, 17);
-            this.Button_deletecat.Location = new System.Drawing.Point(767, 11);
-            this.Button_deletecat.Name = "Button_deletecat";
-            this.Button_deletecat.ShadowDecoration.Parent = this.Button_deletecat;
-            this.Button_deletecat.Size = new System.Drawing.Size(99, 36);
-            this.Button_deletecat.TabIndex = 0;
-            this.Button_deletecat.Text = "Delete";
-            this.Button_deletecat.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.Button_deletecat.TextOffset = new System.Drawing.Point(-2, 1);
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "Category";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Category";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
             // 
-            // Form_searchcat
+            // dataGridViewTextBoxColumn4
             // 
-            this.Form_searchcat.BackColor = System.Drawing.Color.Transparent;
-            this.Form_searchcat.BorderRadius = 15;
-            this.Form_searchcat.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2Transition2.SetDecoration(this.Form_searchcat, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.guna2Transition1.SetDecoration(this.Form_searchcat, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.Form_searchcat.DefaultText = "";
-            this.Form_searchcat.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.Form_searchcat.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.Form_searchcat.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.Form_searchcat.DisabledState.Parent = this.Form_searchcat;
-            this.Form_searchcat.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.Form_searchcat.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.Form_searchcat.FocusedState.Parent = this.Form_searchcat;
-            this.Form_searchcat.Font = new System.Drawing.Font("Poppins Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Form_searchcat.ForeColor = System.Drawing.Color.Black;
-            this.Form_searchcat.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.Form_searchcat.HoverState.Parent = this.Form_searchcat;
-            this.Form_searchcat.IconLeft = ((System.Drawing.Image)(resources.GetObject("Form_searchcat.IconLeft")));
-            this.Form_searchcat.IconLeftOffset = new System.Drawing.Point(10, 0);
-            this.Form_searchcat.Location = new System.Drawing.Point(8, 60);
-            this.Form_searchcat.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
-            this.Form_searchcat.Name = "Form_searchcat";
-            this.Form_searchcat.PasswordChar = '\0';
-            this.Form_searchcat.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.Form_searchcat.PlaceholderText = "Search your item by category.";
-            this.Form_searchcat.SelectedText = "";
-            this.Form_searchcat.ShadowDecoration.Parent = this.Form_searchcat;
-            this.Form_searchcat.Size = new System.Drawing.Size(862, 36);
-            this.Form_searchcat.TabIndex = 0;
-            this.Form_searchcat.TextOffset = new System.Drawing.Point(5, 0);
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "SubCategory";
+            this.dataGridViewTextBoxColumn4.HeaderText = "SubCategory";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "SuperSubCat";
+            this.dataGridViewTextBoxColumn5.HeaderText = "SuperSubCat";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.ReadOnly = true;
+            // 
+            // dataGridViewImageColumn1
+            // 
+            this.dataGridViewImageColumn1.DataPropertyName = "Picture";
+            this.dataGridViewImageColumn1.HeaderText = "Picture";
+            this.dataGridViewImageColumn1.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
+            this.dataGridViewImageColumn1.ReadOnly = true;
+            // 
+            // Separator_cat
+            // 
+            this.Separator_cat.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Transition1.SetDecoration(this.Separator_cat, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.guna2Transition2.SetDecoration(this.Separator_cat, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.Separator_cat.FillColor = System.Drawing.Color.Black;
+            this.Separator_cat.Location = new System.Drawing.Point(12, 52);
+            this.Separator_cat.Name = "Separator_cat";
+            this.Separator_cat.Size = new System.Drawing.Size(857, 10);
+            this.Separator_cat.TabIndex = 0;
             // 
             // bunifuLabel3
             // 
@@ -1013,7 +1195,7 @@ namespace Proj1
             this.Users.Location = new System.Drawing.Point(4, 4);
             this.Users.Name = "Users";
             this.Users.Padding = new System.Windows.Forms.Padding(3);
-            this.Users.Size = new System.Drawing.Size(1104, 621);
+            this.Users.Size = new System.Drawing.Size(1104, 606);
             this.Users.TabIndex = 3;
             this.Users.Text = "User";
             // 
@@ -1043,7 +1225,7 @@ namespace Proj1
             this.Settings.Location = new System.Drawing.Point(4, 4);
             this.Settings.Name = "Settings";
             this.Settings.Padding = new System.Windows.Forms.Padding(3);
-            this.Settings.Size = new System.Drawing.Size(1104, 621);
+            this.Settings.Size = new System.Drawing.Size(1104, 606);
             this.Settings.TabIndex = 4;
             this.Settings.Text = "Settings";
             // 
@@ -1067,6 +1249,10 @@ namespace Proj1
             // Create_Editprod
             // 
             this.Create_Editprod.BackColor = System.Drawing.Color.Gainsboro;
+            this.Create_Editprod.Controls.Add(this.Form_no);
+            this.Create_Editprod.Controls.Add(this.bunifuLabel7);
+            this.Create_Editprod.Controls.Add(this.Button_update);
+            this.Create_Editprod.Controls.Add(this.Insert_image);
             this.Create_Editprod.Controls.Add(this.Button_delete);
             this.Create_Editprod.Controls.Add(this.Button_save);
             this.Create_Editprod.Controls.Add(this.bunifuLabel13);
@@ -1084,14 +1270,112 @@ namespace Proj1
             this.Create_Editprod.Controls.Add(this.Label_category);
             this.Create_Editprod.Controls.Add(this.Label_tittle);
             this.Create_Editprod.Controls.Add(this.bunifuLabel6);
+            this.Create_Editprod.Controls.Add(this.ImageText);
             this.guna2Transition2.SetDecoration(this.Create_Editprod, Guna.UI2.AnimatorNS.DecorationType.None);
             this.guna2Transition1.SetDecoration(this.Create_Editprod, Guna.UI2.AnimatorNS.DecorationType.None);
             this.Create_Editprod.Location = new System.Drawing.Point(4, 4);
             this.Create_Editprod.Name = "Create_Editprod";
             this.Create_Editprod.Padding = new System.Windows.Forms.Padding(3);
-            this.Create_Editprod.Size = new System.Drawing.Size(1104, 621);
+            this.Create_Editprod.Size = new System.Drawing.Size(1104, 606);
             this.Create_Editprod.TabIndex = 5;
             this.Create_Editprod.Text = "Create_Editprod";
+            // 
+            // Form_no
+            // 
+            this.Form_no.BackColor = System.Drawing.Color.Transparent;
+            this.Form_no.BorderRadius = 5;
+            this.Form_no.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.guna2Transition2.SetDecoration(this.Form_no, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.guna2Transition1.SetDecoration(this.Form_no, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.Form_no.DefaultText = "";
+            this.Form_no.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.Form_no.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.Form_no.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.Form_no.DisabledState.Parent = this.Form_no;
+            this.Form_no.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.Form_no.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
+            this.Form_no.FocusedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
+            this.Form_no.FocusedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(253)))), ((int)(((byte)(216)))));
+            this.Form_no.FocusedState.Parent = this.Form_no;
+            this.Form_no.FocusedState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(253)))), ((int)(((byte)(216)))));
+            this.Form_no.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Form_no.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
+            this.Form_no.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
+            this.Form_no.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
+            this.Form_no.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(253)))), ((int)(((byte)(216)))));
+            this.Form_no.HoverState.Parent = this.Form_no;
+            this.Form_no.HoverState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(253)))), ((int)(((byte)(216)))));
+            this.Form_no.IconLeftOffset = new System.Drawing.Point(2, 0);
+            this.Form_no.Location = new System.Drawing.Point(12, 107);
+            this.Form_no.Name = "Form_no";
+            this.Form_no.PasswordChar = '\0';
+            this.Form_no.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
+            this.Form_no.PlaceholderText = "Enter the number";
+            this.Form_no.SelectedText = "";
+            this.Form_no.ShadowDecoration.Parent = this.Form_no;
+            this.Form_no.Size = new System.Drawing.Size(216, 36);
+            this.Form_no.TabIndex = 0;
+            this.Form_no.TextOffset = new System.Drawing.Point(2, 0);
+            // 
+            // bunifuLabel7
+            // 
+            this.bunifuLabel7.AllowParentOverrides = false;
+            this.bunifuLabel7.AutoEllipsis = false;
+            this.bunifuLabel7.CursorType = null;
+            this.guna2Transition1.SetDecoration(this.bunifuLabel7, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.guna2Transition2.SetDecoration(this.bunifuLabel7, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.bunifuLabel7.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuLabel7.Location = new System.Drawing.Point(12, 73);
+            this.bunifuLabel7.Name = "bunifuLabel7";
+            this.bunifuLabel7.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel7.Size = new System.Drawing.Size(69, 28);
+            this.bunifuLabel7.TabIndex = 9;
+            this.bunifuLabel7.Text = "Data No.";
+            this.bunifuLabel7.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel7.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // Button_update
+            // 
+            this.Button_update.BorderRadius = 10;
+            this.Button_update.CheckedState.Parent = this.Button_update;
+            this.Button_update.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Button_update.CustomImages.Parent = this.Button_update;
+            this.guna2Transition2.SetDecoration(this.Button_update, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.guna2Transition1.SetDecoration(this.Button_update, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.Button_update.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.Button_update.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.Button_update.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.Button_update.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.Button_update.DisabledState.Parent = this.Button_update;
+            this.Button_update.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
+            this.Button_update.Font = new System.Drawing.Font("Poppins", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Button_update.ForeColor = System.Drawing.Color.White;
+            this.Button_update.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
+            this.Button_update.HoverState.Parent = this.Button_update;
+            this.Button_update.Image = ((System.Drawing.Image)(resources.GetObject("Button_update.Image")));
+            this.Button_update.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.Button_update.ImageOffset = new System.Drawing.Point(1, -1);
+            this.Button_update.ImageSize = new System.Drawing.Size(16, 16);
+            this.Button_update.Location = new System.Drawing.Point(124, 383);
+            this.Button_update.Name = "Button_update";
+            this.Button_update.ShadowDecoration.Parent = this.Button_update;
+            this.Button_update.Size = new System.Drawing.Size(99, 36);
+            this.Button_update.TabIndex = 8;
+            this.Button_update.Text = "Update";
+            this.Button_update.TextOffset = new System.Drawing.Point(-8, 1);
+            this.Button_update.Click += new System.EventHandler(this.Button_update_Click);
+            // 
+            // Insert_image
+            // 
+            this.Insert_image.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.guna2Transition1.SetDecoration(this.Insert_image, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.guna2Transition2.SetDecoration(this.Insert_image, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.Insert_image.Location = new System.Drawing.Point(284, 294);
+            this.Insert_image.Name = "Insert_image";
+            this.Insert_image.Size = new System.Drawing.Size(216, 195);
+            this.Insert_image.TabIndex = 6;
+            this.Insert_image.TabStop = false;
+            this.Insert_image.Click += new System.EventHandler(this.Insert_image_Click);
             // 
             // Button_delete
             // 
@@ -1115,7 +1399,7 @@ namespace Proj1
             this.Button_delete.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.Button_delete.ImageOffset = new System.Drawing.Point(4, -2);
             this.Button_delete.ImageSize = new System.Drawing.Size(17, 17);
-            this.Button_delete.Location = new System.Drawing.Point(396, 366);
+            this.Button_delete.Location = new System.Drawing.Point(19, 440);
             this.Button_delete.Name = "Button_delete";
             this.Button_delete.ShadowDecoration.Parent = this.Button_delete;
             this.Button_delete.Size = new System.Drawing.Size(99, 36);
@@ -1123,6 +1407,7 @@ namespace Proj1
             this.Button_delete.Text = "Delete";
             this.Button_delete.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.Button_delete.TextOffset = new System.Drawing.Point(-2, 1);
+            this.Button_delete.Click += new System.EventHandler(this.Button_delete_Click);
             // 
             // Button_save
             // 
@@ -1146,13 +1431,14 @@ namespace Proj1
             this.Button_save.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.Button_save.ImageOffset = new System.Drawing.Point(5, -2);
             this.Button_save.ImageSize = new System.Drawing.Size(17, 17);
-            this.Button_save.Location = new System.Drawing.Point(291, 366);
+            this.Button_save.Location = new System.Drawing.Point(19, 383);
             this.Button_save.Name = "Button_save";
             this.Button_save.ShadowDecoration.Parent = this.Button_save;
             this.Button_save.Size = new System.Drawing.Size(99, 36);
             this.Button_save.TabIndex = 0;
             this.Button_save.Text = "Save";
             this.Button_save.TextOffset = new System.Drawing.Point(-8, 1);
+            this.Button_save.Click += new System.EventHandler(this.Button_save_Click);
             // 
             // bunifuLabel13
             // 
@@ -1162,7 +1448,7 @@ namespace Proj1
             this.guna2Transition1.SetDecoration(this.bunifuLabel13, Guna.UI2.AnimatorNS.DecorationType.None);
             this.guna2Transition2.SetDecoration(this.bunifuLabel13, Guna.UI2.AnimatorNS.DecorationType.None);
             this.bunifuLabel13.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuLabel13.Location = new System.Drawing.Point(12, 366);
+            this.bunifuLabel13.Location = new System.Drawing.Point(284, 260);
             this.bunifuLabel13.Name = "bunifuLabel13";
             this.bunifuLabel13.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel13.Size = new System.Drawing.Size(53, 28);
@@ -1176,10 +1462,10 @@ namespace Proj1
             this.guna2Separator1.BackColor = System.Drawing.Color.Transparent;
             this.guna2Transition1.SetDecoration(this.guna2Separator1, Guna.UI2.AnimatorNS.DecorationType.None);
             this.guna2Transition2.SetDecoration(this.guna2Separator1, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.guna2Separator1.FillColor = System.Drawing.Color.White;
+            this.guna2Separator1.FillColor = System.Drawing.Color.Black;
             this.guna2Separator1.Location = new System.Drawing.Point(12, 47);
             this.guna2Separator1.Name = "guna2Separator1";
-            this.guna2Separator1.Size = new System.Drawing.Size(600, 10);
+            this.guna2Separator1.Size = new System.Drawing.Size(740, 10);
             this.guna2Separator1.TabIndex = 0;
             // 
             // Form_price
@@ -1208,7 +1494,7 @@ namespace Proj1
             this.Form_price.HoverState.Parent = this.Form_price;
             this.Form_price.HoverState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(253)))), ((int)(((byte)(216)))));
             this.Form_price.IconLeftOffset = new System.Drawing.Point(2, 0);
-            this.Form_price.Location = new System.Drawing.Point(284, 294);
+            this.Form_price.Location = new System.Drawing.Point(12, 294);
             this.Form_price.Name = "Form_price";
             this.Form_price.PasswordChar = '\0';
             this.Form_price.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
@@ -1227,7 +1513,7 @@ namespace Proj1
             this.guna2Transition1.SetDecoration(this.Label_price, Guna.UI2.AnimatorNS.DecorationType.None);
             this.guna2Transition2.SetDecoration(this.Label_price, Guna.UI2.AnimatorNS.DecorationType.None);
             this.Label_price.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label_price.Location = new System.Drawing.Point(284, 260);
+            this.Label_price.Location = new System.Drawing.Point(12, 260);
             this.Label_price.Name = "Label_price";
             this.Label_price.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.Label_price.Size = new System.Drawing.Size(40, 28);
@@ -1262,7 +1548,7 @@ namespace Proj1
             this.Form_code.HoverState.Parent = this.Form_code;
             this.Form_code.HoverState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(253)))), ((int)(((byte)(216)))));
             this.Form_code.IconLeftOffset = new System.Drawing.Point(2, 0);
-            this.Form_code.Location = new System.Drawing.Point(12, 294);
+            this.Form_code.Location = new System.Drawing.Point(537, 202);
             this.Form_code.Name = "Form_code";
             this.Form_code.PasswordChar = '\0';
             this.Form_code.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
@@ -1281,7 +1567,7 @@ namespace Proj1
             this.guna2Transition1.SetDecoration(this.Label_code, Guna.UI2.AnimatorNS.DecorationType.None);
             this.guna2Transition2.SetDecoration(this.Label_code, Guna.UI2.AnimatorNS.DecorationType.None);
             this.Label_code.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label_code.Location = new System.Drawing.Point(12, 260);
+            this.Label_code.Location = new System.Drawing.Point(537, 168);
             this.Label_code.Name = "Label_code";
             this.Label_code.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.Label_code.Size = new System.Drawing.Size(43, 28);
@@ -1424,7 +1710,7 @@ namespace Proj1
             this.Form_category.HoverState.Parent = this.Form_category;
             this.Form_category.HoverState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(253)))), ((int)(((byte)(216)))));
             this.Form_category.IconLeftOffset = new System.Drawing.Point(2, 0);
-            this.Form_category.Location = new System.Drawing.Point(284, 107);
+            this.Form_category.Location = new System.Drawing.Point(537, 107);
             this.Form_category.Name = "Form_category";
             this.Form_category.PasswordChar = '\0';
             this.Form_category.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
@@ -1461,7 +1747,7 @@ namespace Proj1
             this.Form_tittle.HoverState.Parent = this.Form_tittle;
             this.Form_tittle.HoverState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(253)))), ((int)(((byte)(216)))));
             this.Form_tittle.IconLeftOffset = new System.Drawing.Point(2, 0);
-            this.Form_tittle.Location = new System.Drawing.Point(12, 107);
+            this.Form_tittle.Location = new System.Drawing.Point(284, 107);
             this.Form_tittle.Name = "Form_tittle";
             this.Form_tittle.PasswordChar = '\0';
             this.Form_tittle.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
@@ -1480,7 +1766,7 @@ namespace Proj1
             this.guna2Transition1.SetDecoration(this.Label_category, Guna.UI2.AnimatorNS.DecorationType.None);
             this.guna2Transition2.SetDecoration(this.Label_category, Guna.UI2.AnimatorNS.DecorationType.None);
             this.Label_category.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label_category.Location = new System.Drawing.Point(284, 73);
+            this.Label_category.Location = new System.Drawing.Point(537, 73);
             this.Label_category.Name = "Label_category";
             this.Label_category.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.Label_category.Size = new System.Drawing.Size(76, 28);
@@ -1498,12 +1784,12 @@ namespace Proj1
             this.guna2Transition1.SetDecoration(this.Label_tittle, Guna.UI2.AnimatorNS.DecorationType.None);
             this.guna2Transition2.SetDecoration(this.Label_tittle, Guna.UI2.AnimatorNS.DecorationType.None);
             this.Label_tittle.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label_tittle.Location = new System.Drawing.Point(12, 73);
+            this.Label_tittle.Location = new System.Drawing.Point(284, 73);
             this.Label_tittle.Name = "Label_tittle";
             this.Label_tittle.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Label_tittle.Size = new System.Drawing.Size(39, 28);
+            this.Label_tittle.Size = new System.Drawing.Size(33, 28);
             this.Label_tittle.TabIndex = 0;
-            this.Label_tittle.Text = "Tittle";
+            this.Label_tittle.Text = "Title";
             this.Label_tittle.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.Label_tittle.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
@@ -1523,6 +1809,16 @@ namespace Proj1
             this.bunifuLabel6.Text = "Create and Edit Product";
             this.bunifuLabel6.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel6.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // ImageText
+            // 
+            this.ImageText.BackColor = System.Drawing.Color.Gainsboro;
+            this.guna2Transition1.SetDecoration(this.ImageText, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.guna2Transition2.SetDecoration(this.ImageText, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.ImageText.Location = new System.Drawing.Point(284, 374);
+            this.ImageText.Name = "ImageText";
+            this.ImageText.Size = new System.Drawing.Size(216, 20);
+            this.ImageText.TabIndex = 7;
             // 
             // Image_greetings
             // 
@@ -1555,43 +1851,79 @@ namespace Proj1
             animation2.TimeCoeff = 0F;
             animation2.TransparencyCoeff = 0F;
             this.guna2Transition2.DefaultAnimation = animation2;
-            this.guna2Transition2.Interval = 25;
-            this.guna2Transition2.MaxAnimationTime = 2000;
             // 
-            // Button_hide
+            // bunifuSnackbar1
             // 
-            this.Button_hide.BackColor = System.Drawing.Color.Transparent;
-            this.Button_hide.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2Transition1.SetDecoration(this.Button_hide, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.guna2Transition2.SetDecoration(this.Button_hide, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.Button_hide.Image = ((System.Drawing.Image)(resources.GetObject("Button_hide.Image")));
-            this.Button_hide.ImageRotate = 0F;
-            this.Button_hide.Location = new System.Drawing.Point(239, 10);
-            this.Button_hide.Name = "Button_hide";
-            this.Button_hide.ShadowDecoration.Parent = this.Button_hide;
-            this.Button_hide.Size = new System.Drawing.Size(30, 30);
-            this.Button_hide.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Button_hide.TabIndex = 23;
-            this.Button_hide.TabStop = false;
-            this.Button_hide.Click += new System.EventHandler(this.Button_hide_Click);
+            this.bunifuSnackbar1.AllowDragging = false;
+            this.bunifuSnackbar1.AllowMultipleViews = true;
+            this.bunifuSnackbar1.ClickToClose = true;
+            this.bunifuSnackbar1.DoubleClickToClose = true;
+            this.bunifuSnackbar1.DurationAfterIdle = 3000;
+            this.bunifuSnackbar1.ErrorOptions.ActionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bunifuSnackbar1.ErrorOptions.ActionBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bunifuSnackbar1.ErrorOptions.ActionBorderRadius = 1;
+            this.bunifuSnackbar1.ErrorOptions.ActionFont = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
+            this.bunifuSnackbar1.ErrorOptions.ActionForeColor = System.Drawing.Color.Black;
+            this.bunifuSnackbar1.ErrorOptions.BackColor = System.Drawing.Color.White;
+            this.bunifuSnackbar1.ErrorOptions.BorderColor = System.Drawing.Color.White;
+            this.bunifuSnackbar1.ErrorOptions.CloseIconColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(204)))), ((int)(((byte)(199)))));
+            this.bunifuSnackbar1.ErrorOptions.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.bunifuSnackbar1.ErrorOptions.ForeColor = System.Drawing.Color.Black;
+            this.bunifuSnackbar1.ErrorOptions.Icon = ((System.Drawing.Image)(resources.GetObject("resource.Icon")));
+            this.bunifuSnackbar1.ErrorOptions.IconLeftMargin = 12;
+            this.bunifuSnackbar1.FadeCloseIcon = false;
+            this.bunifuSnackbar1.Host = Bunifu.UI.WinForms.BunifuSnackbar.Hosts.FormOwner;
+            this.bunifuSnackbar1.InformationOptions.ActionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bunifuSnackbar1.InformationOptions.ActionBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bunifuSnackbar1.InformationOptions.ActionBorderRadius = 1;
+            this.bunifuSnackbar1.InformationOptions.ActionFont = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
+            this.bunifuSnackbar1.InformationOptions.ActionForeColor = System.Drawing.Color.Black;
+            this.bunifuSnackbar1.InformationOptions.BackColor = System.Drawing.Color.White;
+            this.bunifuSnackbar1.InformationOptions.BorderColor = System.Drawing.Color.White;
+            this.bunifuSnackbar1.InformationOptions.CloseIconColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(213)))), ((int)(((byte)(255)))));
+            this.bunifuSnackbar1.InformationOptions.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.bunifuSnackbar1.InformationOptions.ForeColor = System.Drawing.Color.Black;
+            this.bunifuSnackbar1.InformationOptions.Icon = ((System.Drawing.Image)(resources.GetObject("resource.Icon1")));
+            this.bunifuSnackbar1.InformationOptions.IconLeftMargin = 12;
+            this.bunifuSnackbar1.Margin = 10;
+            this.bunifuSnackbar1.MaximumSize = new System.Drawing.Size(0, 0);
+            this.bunifuSnackbar1.MaximumViews = 7;
+            this.bunifuSnackbar1.MessageRightMargin = 15;
+            this.bunifuSnackbar1.MinimumSize = new System.Drawing.Size(0, 0);
+            this.bunifuSnackbar1.ShowBorders = false;
+            this.bunifuSnackbar1.ShowCloseIcon = false;
+            this.bunifuSnackbar1.ShowIcon = true;
+            this.bunifuSnackbar1.ShowShadows = true;
+            this.bunifuSnackbar1.SuccessOptions.ActionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bunifuSnackbar1.SuccessOptions.ActionBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bunifuSnackbar1.SuccessOptions.ActionBorderRadius = 1;
+            this.bunifuSnackbar1.SuccessOptions.ActionFont = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
+            this.bunifuSnackbar1.SuccessOptions.ActionForeColor = System.Drawing.Color.Black;
+            this.bunifuSnackbar1.SuccessOptions.BackColor = System.Drawing.Color.White;
+            this.bunifuSnackbar1.SuccessOptions.BorderColor = System.Drawing.Color.White;
+            this.bunifuSnackbar1.SuccessOptions.CloseIconColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(255)))), ((int)(((byte)(237)))));
+            this.bunifuSnackbar1.SuccessOptions.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.bunifuSnackbar1.SuccessOptions.ForeColor = System.Drawing.Color.Black;
+            this.bunifuSnackbar1.SuccessOptions.Icon = ((System.Drawing.Image)(resources.GetObject("resource.Icon2")));
+            this.bunifuSnackbar1.SuccessOptions.IconLeftMargin = 12;
+            this.bunifuSnackbar1.ViewsMargin = 7;
+            this.bunifuSnackbar1.WarningOptions.ActionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bunifuSnackbar1.WarningOptions.ActionBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bunifuSnackbar1.WarningOptions.ActionBorderRadius = 1;
+            this.bunifuSnackbar1.WarningOptions.ActionFont = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
+            this.bunifuSnackbar1.WarningOptions.ActionForeColor = System.Drawing.Color.Black;
+            this.bunifuSnackbar1.WarningOptions.BackColor = System.Drawing.Color.White;
+            this.bunifuSnackbar1.WarningOptions.BorderColor = System.Drawing.Color.White;
+            this.bunifuSnackbar1.WarningOptions.CloseIconColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(229)))), ((int)(((byte)(143)))));
+            this.bunifuSnackbar1.WarningOptions.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.bunifuSnackbar1.WarningOptions.ForeColor = System.Drawing.Color.Black;
+            this.bunifuSnackbar1.WarningOptions.Icon = ((System.Drawing.Image)(resources.GetObject("resource.Icon3")));
+            this.bunifuSnackbar1.WarningOptions.IconLeftMargin = 12;
+            this.bunifuSnackbar1.ZoomCloseIcon = true;
             // 
-            // Button_show
+            // timer1
             // 
-            this.Button_show.BackColor = System.Drawing.Color.Transparent;
-            this.Button_show.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2Transition1.SetDecoration(this.Button_show, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.guna2Transition2.SetDecoration(this.Button_show, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.Button_show.Image = ((System.Drawing.Image)(resources.GetObject("Button_show.Image")));
-            this.Button_show.ImageRotate = 0F;
-            this.Button_show.Location = new System.Drawing.Point(12, 12);
-            this.Button_show.Name = "Button_show";
-            this.Button_show.ShadowDecoration.Parent = this.Button_show;
-            this.Button_show.Size = new System.Drawing.Size(30, 30);
-            this.Button_show.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Button_show.TabIndex = 24;
-            this.Button_show.TabStop = false;
-            this.Button_show.Visible = false;
-            this.Button_show.Click += new System.EventHandler(this.Button_show_Click);
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // Admindb
             // 
@@ -1615,9 +1947,20 @@ namespace Proj1
             ((System.ComponentModel.ISupportInitialize)(this.Logo_pict)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Logo_resize)).EndInit();
             this.guna2Panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.Button_show)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Button_hide)).EndInit();
             this.bunifuPages1.ResumeLayout(false);
             this.Dashboard.ResumeLayout(false);
             this.Dashboard.PerformLayout();
+            this.guna2Panel4.ResumeLayout(false);
+            this.guna2Panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).EndInit();
+            this.guna2Panel3.ResumeLayout(false);
+            this.guna2Panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
+            this.guna2Panel2.ResumeLayout(false);
+            this.guna2Panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.Product.ResumeLayout(false);
             this.Product.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Data_tableprod)).EndInit();
@@ -1630,9 +1973,8 @@ namespace Proj1
             this.Settings.PerformLayout();
             this.Create_Editprod.ResumeLayout(false);
             this.Create_Editprod.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Insert_image)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Image_greetings)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Button_hide)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Button_show)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1668,9 +2010,6 @@ namespace Proj1
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel5;
         private System.Windows.Forms.PictureBox Image_greetings;
         private Guna.UI2.WinForms.Guna2TextBox Form_searchprod;
-        private Guna.UI2.WinForms.Guna2TextBox Form_searchcat;
-        private Guna.UI2.WinForms.Guna2Button Button_deletecat;
-        private Guna.UI2.WinForms.Guna2Button Button_deleteprod;
         private Guna.UI2.WinForms.Guna2Button Button_createprod;
         private System.Windows.Forms.TabPage Create_Editprod;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel6;
@@ -1691,13 +2030,42 @@ namespace Proj1
         private Guna.UI2.WinForms.Guna2Button Button_save;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel13;
         private Guna.UI2.WinForms.Guna2Button Button_editprod;
-        private Guna.UI2.WinForms.Guna2Button Button_searchcat;
         private System.Windows.Forms.DataGridView Data_tableprod;
-        private System.Windows.Forms.DataGridView Data_tablecat;
-        private Guna.UI2.WinForms.Guna2Button Button_searchprod;
-        private Guna.UI2.WinForms.Guna2Button Button_createcat;
-        private Guna.UI2.WinForms.Guna2Button Button_editcat;
         private Guna.UI2.WinForms.Guna2PictureBox Button_show;
         private Guna.UI2.WinForms.Guna2PictureBox Button_hide;
+        private Bunifu.UI.WinForms.BunifuSnackbar bunifuSnackbar1;
+        private System.Windows.Forms.PictureBox Insert_image;
+        private System.Windows.Forms.TextBox ImageText;
+        private Guna.UI2.WinForms.Guna2Button Button_update;
+        private Guna.UI2.WinForms.Guna2TextBox Form_no;
+        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel7;
+        private Guna.UI2.WinForms.Guna2Separator Separator_cat;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
+        private System.Windows.Forms.DataGridViewImageColumn Column8;
+        private System.Windows.Forms.DataGridView Data_tablecat;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn1;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
+        private Bunifu.UI.WinForms.BunifuLabel Label_status;
+        private System.Windows.Forms.Timer timer1;
+        private Bunifu.UI.WinForms.BunifuLabel Label_count;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel4;
+        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel10;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox3;
+        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel11;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel3;
+        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel8;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
+        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel9;
     }
 }

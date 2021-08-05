@@ -220,7 +220,7 @@ namespace Proj1
             this.Show_pass.ShadowDecoration.Parent = this.Show_pass;
             this.Show_pass.Size = new System.Drawing.Size(30, 24);
             this.Show_pass.TabIndex = 16;
-            this.Show_pass.CheckedChanged += new System.EventHandler(this.Show_pass_CheckedChanged_1);
+            this.Show_pass.CheckedChanged += new System.EventHandler(this.Show_pass_CheckedChanged);
             // 
             // Label_infopw
             // 
@@ -469,7 +469,7 @@ namespace Proj1
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "SignupForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form2";
+            this.Text = "Sign Up";
             this.bunifuPanel1.ResumeLayout(false);
             this.bunifuPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.UI_Vector2)).EndInit();

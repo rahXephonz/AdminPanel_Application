@@ -200,13 +200,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Adminpanel.cs">
+    <Compile Include="View\Adminpanel.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Adminpanel.Designer.cs">
+    <Compile Include="View\Adminpanel.Designer.cs">
       <DependentUpon>Adminpanel.cs</DependentUpon>
     </Compile>
-    <Compile Include="DBConnect.cs" />
+    <Compile Include="Controller\DBConnect.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -221,7 +221,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Adminpanel.resx">
+    <EmbeddedResource Include="View\Adminpanel.resx">
       <DependentUpon>Adminpanel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
@@ -278,6 +278,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Model\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

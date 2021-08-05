@@ -1,11 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 
@@ -31,7 +26,6 @@ namespace Proj1
         }
 
         private const int WM_NCHITTEST = 0x84;
-        private const int HT_CLIENT = 0x1;
         private const int HT_CAPTION = 0x2;
         // End
 

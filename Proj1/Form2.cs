@@ -1,12 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 
@@ -32,7 +27,6 @@ namespace Proj1
         }
 
         private const int WM_NCHITTEST = 0x84;
-        private const int HT_CLIENT = 0x1;
         private const int HT_CAPTION = 0x2;
         // End
 
@@ -74,6 +68,7 @@ namespace Proj1
 
         private void Button_Signup_Click(object sender, EventArgs e)
         {
+
             if (Text_username.Text.Trim().Equals("") || Text_password.Text == "" || Text_email.Text == "")
             {
                 // MessageBox.Show("Enter your username and password to login!", "Missing Information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -109,10 +104,15 @@ namespace Proj1
                     bunifuSnackbar1.Show(this, "The Email Already Registered! Choose Another One!", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error);
                 }
 
+                else if (Email_Validator())
+                {
+                    bunifuSnackbar1.Show(this, "Please provide a valid email!", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error);
+                }
+
                 // Jika nama user tidak sama dengan didatabase maka user akan ditambahkan
                 else
                 {
-                    //Eksekusi query menambahkan user akan melakukan Auto Increment
+                    //Eksekusi query menambahkan user
                     if (command.ExecuteNonQuery() == 1)
                     {
                         bunifuSnackbar1.Show(this, "User succesfully created!", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success);
@@ -173,8 +173,22 @@ namespace Proj1
             }
         }
 
-        
-        // Event Handler validasi email adress dengan regex
+        // Validasi Email dengan regex
+
+        public Boolean Email_Validator()
+        {
+            string pattern = (@"^[a-zA-Z][\w\.-]{2,28}[a-zA-Z0-9]@[a-zA-Z0-9][\w\.-]*[a-zA-Z0-9]\.[a-zA-Z][a-zA-Z\.]*[a-zA-Z]$");
+            if (Regex.IsMatch(Text_email.Text, pattern))
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
+
+
         private void Text_email_Leave(object sender, EventArgs e)
         {
             string pattern = (@"^[a-zA-Z][\w\.-]{2,28}[a-zA-Z0-9]@[a-zA-Z0-9][\w\.-]*[a-zA-Z0-9]\.[a-zA-Z][a-zA-Z\.]*[a-zA-Z]$");
@@ -188,9 +202,8 @@ namespace Proj1
             }
         }
 
-
         // Event Handler Tampilkan Password 
-        private void Show_pass_CheckedChanged_1(object sender, EventArgs e)
+        private void Show_pass_CheckedChanged(object sender, EventArgs e)
         {
             if (Show_pass.Checked)
             {
